@@ -1,0 +1,4170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Remote Medical Evacuation Pod | Nomfundo Mkhwanazi</title>
+  <link rel="icon" href="myfavicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: #1a1a1a;
+      color: #eaeaea;
+      margin: 0;
+    }
+
+    header {
+      padding: 3rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.37rem;
+      font-weight: 700;
+    }
+
+    header h1 a,
+    nav a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    nav a {
+      margin-left: 2rem;
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 1rem auto 5rem;
+      padding: 0 2rem;
+    }
+
+    .project-section {
+      margin-top: 5rem;
+    }
+
+    .intro-section {
+      margin-top: 2rem;
+    }
+
+    .page-title {
+      font-size: 2.4rem;
+      margin-bottom: 1rem;
+      color: #eaeaea;
+    }
+
+    .project-meta {
+      color: #aaa;
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .section-heading {
+      color: #00aaff;
+      font-size: 1.8rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .sub-heading {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      color: #eaeaea;
+    }
+
+    .project-section p,
+    .intro-section p {
+      color: #ccc;
+      line-height: 1.8;
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+      text-align: justify;
+    }
+
+    .team-list {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 1rem;
+    }
+
+    .team-list li {
+      color: #ccc;
+      font-size: 1.05rem;
+      line-height: 1.8;
+      margin-bottom: 0.4rem;
+    }
+
+    .team-list a {
+      color: #00aaff;
+      text-decoration: none;
+    }
+
+    .team-list a:hover {
+      text-decoration: underline;
+    }
+
+.calculation {
+  text-align: center !important;
+  color: #eaeaea !important;
+  font-size: 1.05rem;
+  margin: 1.5rem 0;
+}
+
+    .comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid #444;
+  padding: 0.9rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.comparison-table th {
+  color: #eaeaea;
+  background-color: #222;
+}
+
+.table-caption {
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+    .figure-container {
+  margin: 2rem 0;
+}
+
+.figure-image {
+  width: 100%;
+  max-width: 700px;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.figure-caption {
+  color: #aaa;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+  margin: 0 auto;
+  max-width: 700px;
+}
+
+.figure-caption strong {
+  color: #eaeaea;
+}
+
+    @media (max-width: 768px) {
+      header {
+        padding: 2rem;
+      }
+
+      nav a {
+        margin-left: 1rem;
+      }
+
+      .page-title {
+        font-size: 1.9rem;
+      }
+
+      .project-section p,
+      .intro-section p {
+        text-align: left;
+      }
+    }
+
+.function-box {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: 700;
+}
+
+.primary {
+  background-color: #0077b5;
+  color: white;
+}
+
+.function-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2rem 0 4rem;
+}
+
+.function-card {
+  background-color: #222;
+  padding: 1.5rem;
+  text-align: center;
+  border-radius: 6px;
+}
+
+.function-card strong {
+  display: block;
+  margin-bottom: 0.8rem;
+  color: #eaeaea;
+}
+
+.sub-function {
+  color: #aaa;
+}
+
+.auxiliary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.aux-function {
+  background-color: #222;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 6px;
+  color: #ccc;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #aaa;
+  margin-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.icons a {
+  margin: 0 0.5rem;
+  color: #eaeaea;
+  text-decoration: none;
+}
+
+.icons a:hover {
+  color: #0077b5;
+}
+
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1><a href="index.html">Nomfundo Mkhwanazi</a></h1>
+  <nav>
+    <a href="projects.html">Projects</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="intro-section">
+
+    <h1 class="page-title">Remote Medical Evacuation Pod</h1>
+
+    <p class="project-meta">
+      MECN2038A Engineering Design Project • Grade - 73% • University of the Witwatersrand • 2026 
+    </p>
+
+    <p>
+      This project was completed as part of a four-member engineering design team.
+      It focused on the design of a remote medical evacuation pod intended to support
+      safer patient extraction and transport in wildfire environments where road-based
+      evacuation is limited or impossible. The work presented on this page reflects the
+      collective project outcome and is included for portfolio purposes.
+    </p>
+
+    <h3 class="sub-heading">Group Members</h3>
+
+    <ul class="team-list">
+      <li>Ramarumo Rapeta — <a href="#" target="_blank">LinkedIn Portfolio</a></li>
+      <li>Modupi Mamabolo — <a href="#" target="_blank">LinkedIn Portfolio</a></li>
+      <li>Satiate Magomane — <a href="#" target="_blank">LinkedIn Portfolio</a></li>
+      <li>Nomfundo Mkhwanazi — <a href="https://linkedin.com/in/nomfundomkhwanazi" target="_blank">LinkedIn Portfolio</a></li>
+    </ul>
+
+  </section>
+
+  <section class="project-section">
+
+    <h2 class="section-heading">1. Introduction</h2>
+
+    <h3 class="sub-heading">1.1 Background Information</h3>
+
+    <p>
+      Wildfires are a significantly increasing global threat to life. A comprehensive research report
+      on wildfires shows that between the years of 2000 and 2023, globally, 309 wildfire tragedies
+      were recorded, resulting in 14 360 injuries and 1 890 fatalities, with forest fires accounting
+      for 80% of these statistics. The highest casualty tolls were recorded in Southern Europe,
+      Northern America, and the Australia-New Zealand region [1].
+    </p>
+
+    <p>
+      Beyond the fire itself, an active wildfire’s physical surroundings pose additional risks.
+      Wildfire smoke contains a complex harmful mixture of substances including carbon monoxide,
+      nitrogen dioxide, ozone, particulate matter, polycyclic aromatic hydrocarbons, and volatile
+      organic compounds, all of which directly impact public health and, more specifically, the victim
+      at hand [2]. Hot, dry and windy weather conditions create fast-moving fires that are difficult
+      to respond to or control in time, and exposure to these conditions can result in respiratory and
+      cardiovascular disorders, severe burns, and, in the most serious cases, multi-organ failure [2].
+    </p>
+
+    <p>
+      Human life loss is known as the most fatal consequence of this environment, with entrapment
+      being the most recurrent cause of death [3]. Analysis over a 30-year period from 1980 to 2010
+      of wildfire fatalities in Spain found that most victims suffered death due to late evacuation
+      on foot or having an inconvenient mode of transport in closed-off areas such as forests or
+      wildland-urban interface areas [3]. A similar pattern was recognised by an analysis of 144
+      civilian fatalities from forest fires in Greece between 1977 and 2013, where inadequate or
+      delayed evacuation transport or inaccessibility was a critical factor for survival [4].
+    </p>
+
+    <p>
+      The persistence of this pattern across decades and multiple areas of study shows that existing
+      evacuation approaches have not properly addressed the underlying problem. Road accessibility
+      is a crucial structural barrier to effective wildfire evacuation. Poor road access and
+      connectivity prevent evacuees and emergency services from responding effectively, which can
+      lead to a significant increase in injuries and possible death [5].
+    </p>
+
+    <p>
+      The problem is made more difficult in places where there is no vehicle access at all, such as
+      impenetrable forests or places where road infrastructure has been damaged by fire. Inadequate
+      protection during the evacuation process itself can lead to patient deterioration beyond the
+      original injury, since evacuated patients and survivors often arrive at emergency rooms with
+      severe cardiovascular and pulmonary problems [2].
+    </p>
+
+    <p>
+      Increased remoteness has been found to be associated with an increase in death due to remote
+      areas facing significant challenges in the provision of emergency trauma care. Large distances
+      and delays in transferring patients to proper care remain a persistent issue and cause [6].
+    </p>
+
+    <p>
+      To provide medical care and transfer sick or injured people when road-based evacuation is not
+      possible, medical helicopters are called upon to support wilderness search and rescue (SAR)
+      operations [7]. Helicopter deployment, however, does not solve the ground-level issue. A rescue
+      team must first walk to the casualty, administer first care, then move the patient to an
+      appropriate helicopter landing or winching zone before they can be flown [7].
+    </p>
+
+    <p>
+      This foot-based carry phase, which is carried out over potentially large distances in active
+      wildfire terrain while exposed to heat and smoke, represents a crucial gap in the current
+      evacuation capability. Although evacuation gear is available for different rescue situations,
+      there is no existing solution that simultaneously tackles the thermal, atmospheric, logistical,
+      and mass limitations specific to foot-based wildfire patient extraction and interaction with
+      helicopters.
+    </p>
+
+    <h3 class="sub-heading">1.2 Motivation</h3>
+
+    <p>
+      A severely injured victim being transported through active wildfire geography without thermal
+      or respiratory protection is re-exposed to the same hazards that caused their injuries [2].
+      Every second of unprotected exposure worsens their condition. The aftereffects are not just
+      discomfort; they can be the difference between a survivable injury and a fatal one, while also
+      placing additional stress on already strained emergency healthcare systems.
+    </p>
+
+    <p>
+      Evacuation tools are available for various scenarios, including hospital fire evacuations,
+      transporting contagious diseases, and urban search and rescue operations. However, none of
+      these solutions were created for the concurrent mix of constraints found in foot-based wildfire
+      rescue: manual transport by a small group across rugged terrain, high ambient temperatures,
+      smoke and particulate intrusion, strict weight limits, and direct helicopter interface.
+    </p>
+
+    <p>
+      Existing solutions tackle some of these limitations, but none address all of them
+      simultaneously. The high-risk circumstances that Rapid Extraction Module Support (REMS) teams
+      must deal with are the driving force behind this design. Standard stretchers leave patients
+      exposed to radiant heat and toxic particulate matter, as seen in Figure 1.
+    </p>
+
+    <div class="figure-container">
+
+  <img
+    src="figure1.png"
+    alt="Medical extraction equipment used in wildland fire environments"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 1:</strong> Existing field-tested medical extraction equipment in
+    wildland fire environments (Source: Adventure Medics, 2026) [8].
+    Rescuers frequently use regular transport equipment when working in thick smoke
+    and intense heat. As seen in Figure 1, despite the exceptional skill of these
+    teams, existing stretchers do not offer a sealed, insulated, or cooling
+    environment for the patient during evacuation.
+  </p>
+
+  <h3 class="sub-heading">1.3 Existing Solutions</h3>
+
+<p>
+  Three current evacuation options were compared, and it was found that none
+  sufficiently satisfies the requirements of the proposed pod. Although the
+  ResQPod is lightweight at 2.2 kg, it is intended for use by only two rescuers
+  and provides neither thermal nor atmospheric protection [9].
+</p>
+
+<p>
+  The SCAPEPOD Standard uses breathable fabric that offers limited protection
+  from ash and smoke and can accommodate only one to three caregivers [10].
+</p>
+
+<p>
+  The EpiShuttle is the most sophisticated of the three solutions; however,
+  it weighs 62 kg, exceeding the project's 40 kg mass limit, and is rated for
+  temperatures up to only 40°C, which is below the required ambient
+  temperature of 60°C [11].
+</p>
+
+<p>
+  These shortcomings demonstrate that no existing solution simultaneously
+  satisfies all the requirements associated with foot-based wildfire patient
+  evacuation. This gap supports the development of a purpose-built medical
+  evacuation pod specifically designed for wildfire rescue operations.
+</p>
+
+<p class="table-caption">
+  <strong>Table 1:</strong> Comparative analysis between project requirements and existing solutions.
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Requirement</th>
+    <th>ResQPod</th>
+    <th>S-CAPEPOD Standard</th>
+    <th>EpiShuttle</th>
+  </tr>
+
+  <tr>
+    <td>Carry weight of up to 90 kg</td>
+    <td>299 kg (Pass)</td>
+    <td>150 kg (Pass)</td>
+    <td>150 kg (Pass)</td>
+  </tr>
+
+  <tr>
+    <td>Pod weight &lt; 40 kg</td>
+    <td>2.2 kg (Pass)</td>
+    <td>1.5 kg (Pass)</td>
+    <td>62 kg (Fail)</td>
+  </tr>
+
+  <tr>
+    <td>Allow 20° vertical orientation from torso</td>
+    <td>Flat (Fail)</td>
+    <td>Flat (Fail)</td>
+    <td>Integrated bed (Pass)</td>
+  </tr>
+
+  <tr>
+    <td>Accommodate four rescuers carrying the pod</td>
+    <td>2-person operation (Fail)</td>
+    <td>1–3 caregivers (Fail)</td>
+    <td>Stretcher only (Fail)</td>
+  </tr>
+
+  <tr>
+    <td>Protection from heat (up to 60°C)</td>
+    <td>Plastic (Unverified / Fail)</td>
+    <td>Fire retardant fabric (Fail)</td>
+    <td>0°C–40°C (Fail)</td>
+  </tr>
+
+  <tr>
+    <td>Atmospheric protection (smoke and ash)</td>
+    <td>None (Fail)</td>
+    <td>Breathable fabric (Fail)</td>
+    <td>Hard outer protection hood (Pass)</td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">1.4 Problem Statement</h3>
+
+<p>
+  Existing medical evacuation equipment does not adequately satisfy the
+  requirements of foot-based wildfire patient extraction. Current solutions
+  fail to simultaneously provide thermal protection, atmospheric protection,
+  ergonomic transport, low mass, and compatibility with helicopter rescue
+  operations.
+</p>
+
+<p>
+  There is a critical need for a lightweight (< 40 kg) yet structurally robust
+  medical evacuation pod capable of safeguarding a patient weighing up to 90 kg
+  from environmental temperatures of up to 60°C and exposure to fine ash
+  particles during manual transport over distances of up to 500 m from the
+  rescue zone to a helicopter extraction point.
+</p>
+
+<p>
+  The proposed design must also accommodate both adult and paediatric patients,
+  provide a torso incline of up to 20° to support respiratory comfort, and
+  remain compatible with existing helicopter loading and rescue procedures.
+</p>
+
+<h2 class="section-heading">2. Functional Decomposition Diagram</h2>
+
+<div class="function-box primary">
+Primary Function: Rescue and protect the patient
+</div>
+
+<h3 class="sub-heading">Supporting Functions</h3>
+
+<div class="function-grid">
+
+  <div class="function-card">Shield the patient</div>
+  <div class="function-card">Carry patient</div>
+  <div class="function-card">Patient accessibility</div>
+
+  <div class="function-card">Ventilation</div>
+  <div class="function-card">Restrain the patient</div>
+  <div class="function-card">Support weight</div>
+
+</div>
+
+</div>
+
+<h3 class="sub-heading">Auxiliary Functions</h3>
+
+<div class="auxiliary-grid">
+
+  <div class="aux-function">Permit fast patient loading</div>
+
+  <div class="aux-function">Enhance structural durability</div>
+
+  <div class="aux-function">Enable adjustable torso angle change</div>
+
+  <div class="aux-function">Reduce noise during transportation</div>
+
+  <div class="aux-function">Torso inclination</div>
+
+  <div class="aux-function">Provide comfort to the patient</div>
+
+  <div class="aux-function">Provide equipment attachment points</div>
+
+</div>
+
+<section class="project-section">
+
+  <h2 class="section-heading">3. Design Considerations</h2>
+
+  <h3 class="sub-heading">3.1 Safety</h3>
+  <p>
+    Safety is the most critical design consideration, as the primary function of the pod is to
+    protect and transport the patient to a safe environment. This factor strongly influences
+    all other design parameters, including structural strength, load capacity, material selection,
+    and compliance with medical safety standards.
+  </p>
+  <p>
+    To prevent further injury to the patient during evacuation, the pod must include an effective
+    restraint system to minimise unwanted movement and stabilise the patient’s body under dynamic
+    conditions such as carrying motion or uneven terrain.
+  </p>
+  <p>
+    In addition, maintaining adequate ventilation is essential to ensure the patient’s physiological
+    stability during transport, particularly in high-temperature environments. Airflow must be
+    sufficient to prevent overheating and maintain breathable internal conditions.
+  </p>
+
+  <h3 class="sub-heading">3.2 Ergonomics</h3>
+  <p>
+    The design must allow safe and efficient handling by four rescuers over a total evacuation
+    distance of approximately 500 m under extreme environmental conditions.
+  </p>
+  <p>
+    Ergonomic considerations include optimised handle placement, balanced weight distribution, and
+    posture-friendly carrying geometry to reduce physical strain on rescuers. The system must
+    minimise awkward lifting angles and ensure coordinated load sharing between carriers.
+  </p>
+  <p>
+    For the patient, the internal layout must provide comfort, stability, and immobilisation while
+    avoiding pressure points or restrictive positioning that could worsen injuries.
+  </p>
+
+  <h3 class="sub-heading">3.3 Weight</h3>
+  <p>
+    Weight is a critical factor because the pod must be manually carried by four rescuers over a
+    significant distance. A lower overall mass reduces the tensile forces required at the handles
+    and improves endurance during evacuation.
+  </p>
+  <p>
+    Reducing weight also improves safety by decreasing the likelihood of fatigue-related errors
+    or loss of control, which could lead to dropping or destabilising the pod. However, weight
+    reduction must not compromise structural integrity or thermal protection.
+  </p>
+  <p>
+    Therefore, material selection and structural optimisation must balance lightweight design
+    with sufficient strength and durability.
+  </p>
+
+  <h3 class="sub-heading">3.4 Strength</h3>
+  <p>
+    The pod must be structurally strong enough to withstand all operational loads, including:
+    tensile forces applied through the carrying handles, the static and dynamic load of the
+    patient’s body, vibrations and shock loads during transport, and uneven ground conditions
+    and potential impact loads.
+  </p>
+  <p>
+    Structural integrity must be maintained under all expected rescue scenarios. This requires
+    careful consideration of load paths, stress distribution, and material behaviour at
+    elevated temperatures. The structure must resist deformation to ensure patient safety
+    and maintain alignment of internal support systems.
+  </p>
+
+  <h3 class="sub-heading">3.5 Operating Environment</h3>
+
+<p>
+  The pod is designed for operation in extreme environmental conditions,
+  with ambient temperatures reaching up to 60 °C, typical of wildfire
+  scenarios. These conditions significantly affect material performance,
+  including stiffness, strength, and long-term durability.
+</p>
+
+<p>
+  Thermal exposure also influences human factors, such as rescuer fatigue
+  and grip performance, as well as system requirements for ventilation
+  and insulation.
+</p>
+
+<p>
+  Furthermore, the pod must remain functional during transport over
+  approximately 500 m toward patient loading and evacuation points such
+  as helicopters. The design must therefore account for heat resistance,
+  material degradation resistance, and sustained structural performance
+  under prolonged exposure to high temperatures.
+</p>
+
+</section>
+
+<section class="project-section">
+
+  <h2 class="section-heading">4. Global URS</h2>
+
+  <h3 class="sub-heading">4.1 Functional Requirements</h3>
+  <ul class="team-list">
+    <li>Must accommodate a patient mass range of 10 – 90 kg.</li>
+    <li>The pod must allow torso elevation in the range of 0°–20° relative to horizontal.</li>
+    <li>Must allow four rescuers to carry.</li>
+  </ul>
+
+  <h3 class="sub-heading">4.2 Environmental Constraints</h3>
+  <ul class="team-list">
+    <li>The pod must maintain structural integrity under a load of a patient of mass up to 90kg.</li>
+    <li>Must withstand ambient temperatures between 30°C – 100°C.</li>
+    <li>Must comply with applicable medical transport safety regulations.</li>
+  </ul>
+
+  <h3 class="sub-heading">4.3 Evaluation Criteria</h3>
+  <ul class="team-list">
+    <li>Mass</li>
+    <li>Manufacturing cost</li>
+    <li>Internal volume</li>
+  </ul>
+
+</section>
+
+<section class="project-section">
+
+  <h2 class="section-heading">5. Function Specific URSs</h2>
+
+  <h3 class="sub-heading">5.1 Shield</h3>
+
+  <h4 class="sub-heading">5.1.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must enclose a patient with a body length range of 1.2 – 2.0 m.</li>
+    <li>The enclosure material must maintain structural integrity under 30°C–100°C.</li>
+    <li>Must allow full enclosure of the patient’s body in less than 20 seconds.</li>
+  </ul>
+
+  <h4 class="sub-heading">5.1.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Must allow opening/closing within ≤ 10 seconds.</li>
+    <li>Must be manufacturable within a cost of ≤ R10000.</li>
+    <li>Must limit internal temperature rise to ≤ 5°C above ambient.</li>
+  </ul>
+
+  <h4 class="sub-heading">5.1.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Manufacturing costs</li>
+    <li>Thermal protection performance</li>
+    <li>Mass of enclosure</li>
+  </ul>
+
+  <h3 class="sub-heading">5.2 Torso Inclination</h3>
+
+  <h4 class="sub-heading">5.2.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must allow torso inclination between 0 – 20°</li>
+    <li>Angle tolerance of 1°</li>
+    <li>The inclination system must be rigid when supporting</li>
+  </ul>
+
+  <h4 class="sub-heading">5.2.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Must operate in range 20–90°C</li>
+    <li>Must withstand load up to 2000 N</li>
+    <li>Incline mechanism must be ≤ 5 kg</li>
+  </ul>
+
+  <h4 class="sub-heading">5.2.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Cost</li>
+    <li>Angle adjustment duration</li>
+    <li>Force required for adjustment</li>
+  </ul>
+
+  <h3 class="sub-heading">5.3 Structural Support</h3>
+
+  <h4 class="sub-heading">5.3.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must support a load up to 160 kg, including equipment, patient, and safety factor</li>
+    <li>Must maintain structural integrity at temperatures between 30–100°C</li>
+    <li>Must distribute loads evenly across the frame</li>
+  </ul>
+
+  <h4 class="sub-heading">5.3.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Limit structural deflection to ≤ 10 mm under maximum load</li>
+    <li>Manufacturable within a cost of ≤ R4000</li>
+    <li>Withstand a minimum load of 500 N without failure</li>
+  </ul>
+
+  <h4 class="sub-heading">5.3.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Manufacturing costs</li>
+    <li>Support structure mass</li>
+    <li>Max load capacity</li>
+  </ul>
+
+  <h3 class="sub-heading">5.4 Carrying</h3>
+
+  <h4 class="sub-heading">5.4.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must allow 4 rescuers to carry simultaneously</li>
+    <li>Each handle must withstand load up to 40 kg</li>
+    <li>Must allow lifting and lowering within ≤ 10 seconds</li>
+  </ul>
+
+  <h4 class="sub-heading">5.4.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Mass of the handling subsystem must be below 4 kg</li>
+    <li>System must remain compatible with helicopter interface requirements</li>
+    <li>Must withstand 20–100°C</li>
+  </ul>
+
+  <h4 class="sub-heading">5.4.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Handle mass</li>
+    <li>Grip stability</li>
+    <li>Manufacturing cost</li>
+  </ul>
+
+  <h3 class="sub-heading">5.5 Ventilation</h3>
+
+  <h4 class="sub-heading">5.5.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must allow air exchange at a rate of 1 m/s sufficient for a single patient</li>
+    <li>Ventilation openings must prevent particle entry larger than 1 mm</li>
+    <li>Must maintain internal temperature of the pod within 10–25°C</li>
+  </ul>
+
+  <h4 class="sub-heading">5.5.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Mass of each subsystem must be < 5 kg</li>
+    <li>Must operate under 30–100°C temperature conditions</li>
+    <li>Enable operations in under 60 seconds</li>
+  </ul>
+
+  <h4 class="sub-heading">5.5.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Airflow rate</li>
+    <li>Resistance to ash blockade (pore sizes)</li>
+    <li>Thermal regulation</li>
+  </ul>
+
+  <h3 class="sub-heading">5.6 Patient Restraining</h3>
+
+  <h4 class="sub-heading">5.6.1 Functional Requirements</h4>
+  <ul class="team-list">
+    <li>Must securely restrain a patient of mass up to 90 kg during transport</li>
+    <li>Restrict patient movement to ≤ 50 mm in any direction during carrying</li>
+    <li>Accommodate a patient torso inclination of up to 20°</li>
+  </ul>
+
+  <h4 class="sub-heading">5.6.2 Environmental Constraints</h4>
+  <ul class="team-list">
+    <li>Mass of the restraining belts must be ≤ 3 kg</li>
+    <li>Materials must operate effectively within 20–100°C</li>
+    <li>Belt material must be non-elastic</li>
+  </ul>
+
+  <h4 class="sub-heading">5.6.3 Evaluation Criteria</h4>
+  <ul class="team-list">
+    <li>Weight of the restraining system</li>
+    <li>Manufacturing cost</li>
+    <li>Release time</li>
+  </ul>
+
+</section>
+
+<section class="project-section">
+
+  <h2 class="section-heading">6. Generation of Concepts</h2>
+
+  <h3 class="sub-heading">6.1 Tables of Solutions</h3>
+
+  <p>
+    Concept generation was conducted for each major function identified during
+    the functional decomposition process. Multiple solution principles were
+    considered and evaluated against the project requirements before selecting
+    the most suitable concept for further development.
+  </p>
+
+  <h4 class="sub-heading">Function: Shield the Patient from Heat</h4>
+
+  <p>
+    <strong>Baseline Solution:</strong> Insulated wall enclosure.
+  </p>
+
+  <p class="table-caption">
+  <strong>Table 2:</strong> Heat Protection Solutions
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Solution</th>
+    <th>How does it do it?</th>
+    <th>Fundamentally Different to Baseline Solution?</th>
+    <th>Valid Solution?</th>
+  </tr>
+
+  <tr>
+    <td>Double and insulated wall enclosure with air gap</td>
+    <td>
+      The sandwich insulation and air gap between two layers
+      reduce heat transfer into the pod.
+    </td>
+    <td>
+      Yes – it has an air gap between walls.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Heat-resistant fabric side cover</td>
+    <td>
+      A fabric mounted around the pod slows down the heat
+      reaching the pod.
+    </td>
+    <td>
+      Yes – it uses fabric instead of walls.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Sandwich panels</td>
+    <td>
+      Two strong outer layers bonded to a thick
+      hexagonal/coffin-shaped core.
+    </td>
+    <td>
+      Yes – composite material construction.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">Carrying</h3>
+
+<p>
+  <strong>Function:</strong> Enable carrying of the evacuation pod by four rescuers.
+</p>
+
+<p>
+  <strong>Baseline Solution:</strong> Fixed side handles.
+</p>
+
+<p class="table-caption">
+  <strong>Table 3:</strong> Load Carrying Mechanisms
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Solution</th>
+    <th>How does it do it?</th>
+    <th>Fundamentally Different to Baseline Solution?</th>
+    <th>Valid Solution?</th>
+  </tr>
+
+  <tr>
+    <td>Shoulder carrying</td>
+    <td>
+      Straps enable rescuers to carry the pod on their shoulders.
+    </td>
+    <td>
+      Yes – load point changes from hands to shoulders.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Rolling wheels</td>
+    <td>
+      Small wheels roll forward while rescuers push rather than lift.
+    </td>
+    <td>
+      Yes – a rolling mechanism is used instead of lifting.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Long carrying poles</td>
+    <td>
+      Long poles run along the length of the pod for rescuers to hold
+      at the front and back.
+    </td>
+    <td>
+      Yes – force is applied through two parallel poles which rescuers hold.
+    </td>
+    <td>Yes</td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">Torso Inclination</h3>
+
+<p>
+  <strong>Function:</strong> Torso inclination.
+</p>
+
+<p>
+  <strong>Baseline Solution:</strong> Mechanical hinge (manual locking at specific angles).
+</p>
+
+<p class="table-caption">
+  <strong>Table 4:</strong> Solution generation for torso inclination
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Solution</th>
+    <th>How does it do it?</th>
+    <th>Fundamentally Different to Baseline Solution?</th>
+    <th>Valid Solution?</th>
+  </tr>
+
+  <tr>
+    <td>Gas strut mechanism</td>
+    <td>Uses compressed gas, e.g. nitrogen, to generate a force.</td>
+    <td>Yes – pneumatic mechanism</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Screw driven mechanism adjustment</td>
+    <td>
+      An endless height adjustment is possible using a lead screw that is
+      rotated by a hand crank or motor.
+    </td>
+    <td>Yes – mechanical work</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Car recliner mechanism</td>
+    <td>Uses a pawl and gear to recline the seat by a knob.</td>
+    <td>Yes – unidirectional mechanical lock</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Prismatic-revolute-revolute</td>
+    <td>
+      To tilt and raise the platform, three active prismatic joints or sliders
+      change the length and position of the legs.
+    </td>
+    <td>Yes – multi-degree-of-freedom parallel linkage</td>
+    <td>Yes</td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">Structural Support</h3>
+
+<p>
+  <strong>Function:</strong> Giving the pod stiffness and the ability to support weight.
+</p>
+
+<p>
+  <strong>Baseline Solution:</strong> Inflatable truss.
+</p>
+
+<p class="table-caption">
+  <strong>Table 5:</strong> Structural support solutions
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Solution</th>
+    <th>How does it do it?</th>
+    <th>Fundamentally Different to Baseline Solution?</th>
+    <th>Valid Solution?</th>
+  </tr>
+
+  <tr>
+    <td>Internal frame (space frame)</td>
+    <td>
+      A rigid internal frame supports loads while covered by an external structure.
+    </td>
+    <td>Yes – skeleton-based</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>External monocoque shell</td>
+    <td>
+      Load acts on the outer skin, distributing stresses across the surface.
+    </td>
+    <td>Yes – skin-based support</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td>Longitudinal I-beam</td>
+    <td>
+      Sturdy rails span the length of the pod to absorb bending stresses.
+    </td>
+    <td>Yes – directional reinforcement</td>
+    <td>Yes</td>
+  </tr>
+
+</table>
+
+<h2 class="section-heading">6.2 Drawings of Concepts</h2>
+
+<h3 class="sub-heading">6.2.1 Concept 1</h3>
+
+<p>
+  The first concept consists of an aluminium frame connected to the torso
+  support frame through a clevis joint. A car recliner mechanism is used to
+  facilitate torso inclination adjustment, allowing the patient’s upper body
+  to be positioned at various angles for improved comfort and respiratory
+  support during evacuation.
+</p>
+
+<p>
+  A single mesh ventilation system is positioned above the patient’s head to
+  allow airflow into the pod while simultaneously limiting the entry of ash,
+  debris, and other airborne contaminants commonly present in wildfire
+  environments.
+</p>
+
+<p>
+  The pod is enclosed using a transparent cover that allows rescuers to
+  visually monitor the patient throughout transportation without requiring
+  the enclosure to be opened. This improves patient observation while
+  maintaining environmental protection.
+</p>
+
+<p>
+  Rubber sealing elements are incorporated around the enclosure interface to
+  improve airtightness and reduce smoke ingress. The seals also assist in
+  preventing unwanted movement or slippage of enclosure components during
+  transport across uneven terrain.
+</p>
+
+<div class="figure-container">
+
+  <img
+    src="figure2.png"
+    alt="CAD drawing of Concept 1"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 2:</strong> CAD drawing of Concept 1 showing the clear pod
+    cover, rubber sealing interface, patient mattress, and car recliner
+    mechanism used to provide torso inclination adjustment.
+  </p>
+
+</div>
+<h3 class="sub-heading">6.2.2 Concept 2</h3>
+
+<p>
+  Concept 2 is a cylindrical single-shell evacuation pod featuring a curved
+  composite outer enclosure and a transparent polycarbonate access panel
+  integrated into the upper section of the shell. The opening and closing
+  interfaces are sealed using a rubber gasket system to reduce the ingress of
+  smoke, ash, and hot air during wildfire evacuation.
+</p>
+
+<p>
+  Internally, the pod uses aluminium I-beams positioned beneath the support bed
+  to reinforce the lower structure and distribute patient loads along the base
+  of the enclosure. The patient support section incorporates an EVA mattress
+  and a manually adjustable backrest mechanism that locks into preset positions
+  using a hinged mechanical locking system.
+</p>
+
+<p>
+  The cylindrical geometry improves structural stiffness and distributes
+  external loads efficiently across the enclosure while minimising the number
+  of internal structural members. This configuration provides a lightweight but
+  structurally efficient solution capable of supporting patient transport in
+  demanding wildfire rescue environments.
+</p>
+<div class="figure-container">
+
+  <img
+    src="figure3.png"
+    alt="CAD drawing of Concept 2"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 3:</strong> CAD model of Concept 2 showing the cylindrical
+    enclosure, transparent access panel, integrated carrying handles,
+    internal support structure, and patient support compartment.
+  </p>
+
+</div>
+
+<h3 class="sub-heading">6.2.3 Concept 3</h3>
+
+<p>
+  Concept 3 is a hybrid evacuation pod consisting of a lightweight internal
+  aluminium frame enclosed within insulated fibreglass sandwich-panel shells
+  forming the upper cover and lower container. The enclosure incorporates a
+  transparent polycarbonate viewing window, allowing rescuers to monitor the
+  patient during transportation without opening the pod.
+</p>
+
+<p>
+  Rubber gasket seals are positioned between the upper and lower shell sections
+  to reduce the ingress of smoke, ash, and heated air into the patient
+  compartment. This provides an additional layer of environmental protection
+  during wildfire evacuation operations.
+</p>
+
+<p>
+  The internal aluminium frame includes strategically placed perforations to
+  reduce overall system mass while maintaining the structural integrity
+  required to support patient and equipment loads. This approach improves
+  weight efficiency without compromising strength.
+</p>
+
+<p>
+  Inside the pod, the patient is supported by an EVA-cushioned split mattress
+  system incorporating an adjustable torso support section actuated through a
+  gas strut mechanism. This enables controlled torso inclination and improved
+  patient comfort during transport.
+</p>
+
+<p>
+  Ventilation is provided through filtered vents assisted by compact axial
+  fans that promote internal air circulation, improve thermal comfort, and
+  reduce the accumulation of smoke and particulate matter within the patient
+  compartment during evacuation procedures.
+</p>
+
+<div class="figure-container">
+
+  <img
+    src="figure4.png"
+    alt="CAD drawing of Concept 3"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 4:</strong> CAD model of Concept 3 showing the final
+    configuration of the proposed remote medical evacuation pod.
+  </p>
+
+</div>
+
+<h2 class="section-heading">7. Evaluation of Concepts</h2>
+
+<h3 class="sub-heading">7.1 Criteria Selection and Justification</h3>
+
+<p>
+  The generated concepts were evaluated against a set of criteria derived from
+  the functional requirements, environmental constraints, and design
+  objectives established earlier in the project. These criteria were selected
+  to ensure that the final concept provides an appropriate balance between
+  performance, safety, manufacturability, and operational effectiveness in a
+  wildfire evacuation environment.
+</p>
+
+<ul class="team-list">
+  <li><strong>A. Manufacturing Cost</strong></li>
+  <li><strong>B. Mass</strong></li>
+  <li><strong>C. Airflow Rate</strong></li>
+  <li><strong>D. Stiffness</strong></li>
+  <li><strong>E. Maximum Load Capacity</strong></li>
+  <li><strong>F. Thermal Protection Performance</strong></li>
+</ul>
+
+<h3 class="sub-heading">7.2 Evaluation</h3>
+
+<p class="table-caption">
+  <strong>Table 6:</strong> Criteria Weighting Matrix
+</p>
+</p>
+<div class="figure-container">
+
+  <img
+    src="Picture5.png"
+    alt="Criteria Weighting Matrix"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Table 6:</strong> Criteria weighting matrix used to determine the
+    relative importance of each evaluation criterion during concept selection.
+  </p>
+
+</div>
+
+<p>
+  <strong>A vs B → B wins</strong><br>
+  Mass is more critical than manufacturing cost because the pod must be physically lifted and transported by four rescuers. A low-cost design is ineffective if it is too heavy to evacuate safely.
+</p>
+
+<p>
+  <strong>A vs C → C wins</strong><br>
+  Airflow rate is more important than manufacturing cost because oxygen supply and smoke removal directly influence patient survivability, whereas cost does not affect survival during evacuation.
+</p>
+
+<p>
+  <strong>A vs D → D wins</strong><br>
+  Structural stiffness is more important than manufacturing cost because excessive deformation during lifting or transport may compromise patient safety and structural integrity.
+</p>
+
+<p>
+  <strong>A vs E → E wins</strong><br>
+  Maximum load capacity is more important than manufacturing cost because structural failure during lifting or transport results in immediate system failure and patient danger.
+</p>
+
+<p>
+  <strong>A vs F → F wins</strong><br>
+  Thermal protection performance is more important than manufacturing cost because survival in wildfire conditions depends on adequate heat shielding. Cost becomes irrelevant if protection fails.
+</p>
+
+<p>
+  <strong>B vs C → B wins</strong><br>
+  Mass is more important than airflow rate because the pod must first be physically transportable. Without manageable mass, evacuation becomes impossible regardless of air supply quality.
+</p>
+
+<p>
+  <strong>B vs D → B wins</strong><br>
+  Mass is more important than structural stiffness because increasing stiffness often increases weight, whereas maintaining transportability for four rescuers is essential.
+</p>
+
+<p>
+  <strong>B vs E → E wins</strong><br>
+  Maximum load capacity is more important than mass because structural failure under lifting loads is catastrophic, whereas slight mass increases can still be tolerated.
+</p>
+
+<p>
+  <strong>B vs F → F wins</strong><br>
+  Thermal protection performance is more important than mass because survival in extreme heat conditions overrides transport-efficiency concerns.
+</p>
+
+<p>
+  <strong>C vs D → D wins</strong><br>
+  Structural stiffness is more important than airflow rate because excessive structural flexing can compromise the integrity and safety of the evacuation pod during handling and transport.
+</p>
+
+<p>
+  <strong>C vs E → E wins</strong><br>
+  Maximum load capacity is more important than airflow rate because structural failure during lifting or transport results in immediate system collapse.
+</p>
+
+<p>
+  <strong>C vs F → F wins</strong><br>
+  Thermal protection performance is more important than airflow rate because preventing heat injury is the primary survival constraint in wildfire environments.
+</p>
+
+<p>
+  <strong>D vs E → E wins</strong><br>
+  Maximum load capacity is more important than structural stiffness because the structure must first withstand the required loads before minimizing deformation becomes important.
+</p>
+
+<p>
+  <strong>D vs F → F wins</strong><br>
+  Thermal protection performance is more important than structural stiffness because maintaining survivable internal temperatures is more critical than minimizing structural deflection.
+</p>
+
+<p>
+  <strong>E vs F → F wins</strong><br>
+  Thermal protection performance is more important than maximum load capacity because even a structurally strong pod is ineffective if it cannot protect the patient from lethal heat exposure.
+</p>
+
+</section>
+</div>
+
+<h3 class="sub-heading">7.4 Weighted Decision Matrix</h3>
+
+<p class="table-caption">
+  <strong>Table 7:</strong> Weighted Decision Matrix
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Criteria</th>
+    <th>Weight</th>
+    <th>Max Score</th>
+    <th colspan="2">Concept 1</th>
+    <th colspan="2">Concept 2</th>
+    <th colspan="2">Concept 3</th>
+  </tr>
+
+  <tr>
+    <td>A</td>
+    <td>1</td>
+    <td>5</td>
+    <td>3</td>
+    <td>3</td>
+    <td>4</td>
+    <td>4</td>
+    <td>2</td>
+    <td>2</td>
+  </tr>
+
+  <tr>
+    <td>B</td>
+    <td>4</td>
+    <td>20</td>
+    <td>2</td>
+    <td>8</td>
+    <td>4</td>
+    <td>16</td>
+    <td>3</td>
+    <td>12</td>
+  </tr>
+
+  <tr>
+    <td>C</td>
+    <td>3</td>
+    <td>15</td>
+    <td>4</td>
+    <td>12</td>
+    <td>3</td>
+    <td>9</td>
+    <td>5</td>
+    <td>15</td>
+  </tr>
+
+  <tr>
+    <td>D</td>
+    <td>2</td>
+    <td>10</td>
+    <td>3</td>
+    <td>6</td>
+    <td>4</td>
+    <td>8</td>
+    <td>5</td>
+    <td>10</td>
+  </tr>
+
+  <tr>
+    <td>E</td>
+    <td>5</td>
+    <td>25</td>
+    <td>3</td>
+    <td>15</td>
+    <td>4</td>
+    <td>20</td>
+    <td>5</td>
+    <td>25</td>
+  </tr>
+
+  <tr>
+    <td>F</td>
+    <td>6</td>
+    <td>30</td>
+    <td>3</td>
+    <td>18</td>
+    <td>4</td>
+    <td>24</td>
+    <td>5</td>
+    <td>30</td>
+  </tr>
+
+  <tr>
+    <td><strong>Total</strong></td>
+    <td></td>
+    <td><strong>105</strong></td>
+    <td></td>
+    <td><strong>62</strong></td>
+    <td></td>
+    <td><strong>81</strong></td>
+    <td></td>
+    <td><strong>94</strong></td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">7.5 Score Justification</h3>
+
+<h4 class="sub-heading">A. Manufacturing Cost (Weight: 1)</h4>
+
+<p>
+<strong>Concept 2 (Score: 4)</strong><br>
+The cylindrical monocoque shell reduces the number of internal structural members and joints, lowering assembly complexity compared to frame-based systems. However, the curved geometry and moulding processes still require specialized manufacturing techniques.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 3)</strong><br>
+The rigid shell and recliner system use relatively common fabrication processes and commercially available components, but the recliner mechanism introduces additional moving parts and assembly operations which increase manufacturing complexity.
+</p>
+
+<p>
+<strong>Concept 3 (Score: 2)</strong><br>
+The hybrid frame-shell system requires fabrication of both an internal aluminium frame and insulated sandwich-panel enclosure. The combination of multiple subsystems, perforated structural members, gas strut integration, and thermal sealing increases manufacturing time and production cost.
+</p>
+
+<h4 class="sub-heading">B. Mass (Weight: 4)</h4>
+
+<p>
+<strong>Concept 2 (Score: 4)</strong><br>
+The cylindrical shell distributes loads efficiently through its geometry, reducing the need for excessive internal reinforcement. This allows a relatively lightweight structure while maintaining stiffness.
+</p>
+
+<p>
+<strong>Concept 3 (Score: 3)</strong><br>
+The perforated aluminium frame reduces structural mass while maintaining adequate strength. However, the dual-shell insulated enclosure increases total system weight compared to single-shell concepts.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 2)</strong><br>
+The rigid shell, recliner mechanism, aluminium backrest structure, and additional adjustment components increase the total mass of the pod and handling effort during evacuation.
+</p>
+
+<h4 class="sub-heading">C. Airflow Rate (Weight: 3)</h4>
+
+<p>
+<strong>Concept 3 (Score: 5)</strong><br>
+The design incorporates compact axial fans integrated into HEPA-filtered vents, producing controlled active airflow circulation throughout the enclosure. This improves ventilation effectiveness and reduces stagnant air regions.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 4)</strong><br>
+The assisted ventilation system provides adequate airflow through filtered vents and supports occupant breathing comfort during evacuation.
+</p>
+
+<p>
+<strong>Concept 2 (Score: 3)</strong><br>
+The cylindrical enclosure primarily relies on passive airflow with limited assisted ventilation, resulting in lower airflow circulation compared to actively ventilated concepts.
+</p>
+
+<h4 class="sub-heading">D. Stiffness (Weight: 2)</h4>
+
+<p>
+<strong>Concept 3 (Score: 5)</strong><br>
+The internal aluminium frame provides a dedicated structural load path independent of the enclosure. The frame-shell combination significantly improves bending resistance and structural rigidity under carrying loads.
+</p>
+
+<p>
+<strong>Concept 2 (Score: 4)</strong><br>
+The cylindrical shell geometry naturally distributes stresses efficiently and provides high global stiffness through curvature, although local deformation may still occur without a full internal frame.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 3)</strong><br>
+The rigid shell structure provides acceptable stiffness, but the inclusion of large access openings and recliner mechanisms reduces overall structural rigidity compared to reinforced frame systems.
+</p>
+
+<h4 class="sub-heading">E. Maximum Load Capacity (Weight: 5)</h4>
+
+<p>
+<strong>Concept 3 (Score: 5)</strong><br>
+The internal 6061-T6 aluminium frame is specifically designed to carry patient and handling loads independently of the enclosure, producing the highest structural load capacity and safest load transfer path.
+</p>
+
+<p>
+<strong>Concept 2 (Score: 4)</strong><br>
+The aluminium I-beam supports beneath the bed improve vertical load distribution and increase patient support strength, although the shell still carries part of the structural loading.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 3)</strong><br>
+The recliner-based patient support system introduces additional movable joints and localized loading regions which reduce the overall load-carrying efficiency of the structure.
+</p>
+
+<h4 class="sub-heading">F. Thermal Protection Performance (Weight: 6)</h4>
+
+<p>
+<strong>Concept 3 (Score: 5)</strong><br>
+The insulated fiberglass sandwich panels provide the highest resistance to heat transfer due to the low thermal conductivity of the layered composite structure and enclosed air-gap insulation system.
+</p>
+
+<p>
+<strong>Concept 2 (Score: 4)</strong><br>
+The enclosed cylindrical shell provides moderate thermal protection using composite enclosure materials and sealed interfaces, although it lacks dedicated sandwich insulation.
+</p>
+
+<p>
+<strong>Concept 1 (Score: 3)</strong><br>
+The rigid shell enclosure provides environmental isolation and filtered ventilation, but the absence of a dedicated insulated sandwich-panel system results in lower thermal resistance during wildfire exposure.
+</p>
+
+<h2 class="section-heading">8. Detailed Design of Selected Concept</h2>
+
+<h3 class="sub-heading">8.1 System-Level Layout</h3>
+
+<h4 class="sub-heading">8.1.1 Assembly CAD View of the Solution</h4>
+
+<div class="figure-container">
+
+  <img
+    src="figure4.png"
+    alt="Assembly CAD view of final design"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 5:</strong> Assembly CAD view of final design.
+    <a href="#" target="_blank">Concept Animation</a>
+  </p>
+
+</div>
+
+<h4 class="sub-heading">8.1.2 Key Dimensions</h4>
+
+<p class="table-caption">
+  <strong>Table 8:</strong> Pod Dimensions
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Dimension</th>
+  </tr>
+
+  <tr>
+    <td>Overall Pod Length</td>
+    <td>2200 mm</td>
+  </tr>
+
+  <tr>
+    <td>Overall Pod Width (Top Shell)</td>
+    <td>800 mm</td>
+  </tr>
+
+  <tr>
+    <td>Overall Pod Width (Lower Shell)</td>
+    <td>700 mm</td>
+  </tr>
+
+  <tr>
+    <td>Overall Pod Height</td>
+    <td>400 mm</td>
+  </tr>
+
+  <tr>
+    <td>Bottom Shell Length (Outer)</td>
+    <td>2200 mm</td>
+  </tr>
+
+  <tr>
+    <td>Bottom Shell Height</td>
+    <td>160 mm</td>
+  </tr>
+
+  <tr>
+    <td>Bottom Shell Thickness</td>
+    <td>22 mm</td>
+  </tr>
+
+  <tr>
+    <td>Top Cover Length</td>
+    <td>2200 mm</td>
+  </tr>
+
+  <tr>
+    <td>Top Cover Width</td>
+    <td>800 mm</td>
+  </tr>
+
+  <tr>
+    <td>Top Cover Height</td>
+    <td>240 mm</td>
+  </tr>
+
+  <tr>
+    <td>Top Shell Thickness</td>
+    <td>17 mm</td>
+  </tr>
+
+  <tr>
+    <td>Lower Body Frame Length</td>
+    <td>1320 mm</td>
+  </tr>
+
+  <tr>
+  <td>Lower Body Frame Width</td>
+  <td>652 mm</td>
+</tr>
+
+<tr>
+  <td>Cross Member Span</td>
+  <td>572 mm</td>
+</tr>
+
+<tr>
+  <td>Torso Frame Length</td>
+  <td>651 mm</td>
+</tr>
+
+<tr>
+  <td>Torso Frame Width</td>
+  <td>572 mm</td>
+</tr>
+
+<tr>
+  <td>Frame Cross-Section</td>
+  <td>40 mm × 40 mm SHS</td>
+</tr>
+
+<tr>
+  <td>Frame Wall Thickness</td>
+  <td>3 mm</td>
+</tr>
+
+<tr>
+  <td>Vent Pores Diameter</td>
+  <td>6 mm</td>
+</tr>
+
+<tr>
+  <td>Gas Strut Stroke</td>
+  <td>100–150 mm</td>
+</tr>
+
+<tr>
+  <td>Handle Length</td>
+  <td>300 mm</td>
+</tr>
+
+<tr>
+  <td>Handle Diameter</td>
+  <td>30 mm</td>
+</tr>
+
+<tr>
+  <td>Viewing Window (Major Axis)</td>
+  <td>350 mm</td>
+</tr>
+
+<tr>
+  <td>Viewing Window (Minor Axis)</td>
+  <td>180 mm</td>
+</tr>
+
+<tr>
+  <td>Polycarbonate Window Thickness</td>
+  <td>10 mm</td>
+</tr>
+
+<tr>
+  <td>Seal Thickness</td>
+  <td>5–8 mm</td>
+</tr>
+
+</table>
+
+<h4 class="sub-heading">8.1.3 System Integration</h4>
+
+<p>
+The successful operation of the Wildfire Evacuation Pod relies on the seamless interaction of its subsystems. The integration ensures that structural, environmental, patient support, and handling systems function as a single coordinated unit under both static and dynamic evacuation conditions. The system has been designed so that load transfer paths, environmental sealing, and user accessibility are all mutually compatible and do not interfere with one another during operation.
+</p>
+
+<h4 class="sub-heading">Chassis Frame as the Structural Backbone</h4>
+
+<p>
+The 6061-T6 aluminium internal frame subsystem acts as the primary load-bearing structure of the pod. It provides the mechanical backbone to which all other subsystems are mounted. All loads generated by the patient, lifting operations, and handling forces are transferred into this frame.
+</p>
+
+<ul class="team-list">
+  <li>The longitudinal and cross-member configuration ensures bidirectional stiffness.</li>
+  <li>The frame provides defined mounting points for:</li>
+  <li>Environmental protection shell (FRP enclosure)</li>
+  <li>Patient support platform</li>
+  <li>Handle and load interface brackets</li>
+  <li>Gas strut mounting points</li>
+  <li>Load transfer occurs from the external shell → mounting interfaces → internal frame → handle points → rescuers/ground.</li>
+</ul>
+
+<p>
+This ensures that no subsystem independently carries global structural loads, preventing localized failure.
+</p>
+
+<h4 class="sub-heading">Load Path Management</h4>
+
+<p>
+All applied forces during evacuation are channelled through clearly defined load paths:
+</p>
+
+<ul class="team-list">
+  <li><strong>Vertical loads (patient weight + pod mass)</strong></li>
+  <li>Patient → bed platform → frame rails → cross members → handles → rescuers/ground</li>
+  <li><strong>Handling loads (manual carrying and lifting)</strong></li>
+  <li>Handles → aluminium brackets → welded frame nodes → distributed across longitudinal members</li>
+  <li><strong>Dynamic loads (walking, impacts, terrain variation)</strong></li>
+  <li>Absorbed through:</li>
+  <li>Aluminium frame stiffness</li>
+  <li>FRP shell deformation allowance</li>
+  <li>EVA foam damping in patient support system</li>
+</ul>
+
+<p>
+This integrated load path ensures that no single subsystem experiences isolated overstress conditions.
+</p>
+
+<h4 class="sub-heading">Environmental Protection Integration</h4>
+
+<p>
+The FRP + polyurethane insulated enclosure is mounted externally onto the frame using bolted and sealed interfaces.
+</p>
+
+<ul class="team-list">
+  <li>The enclosure does not carry primary structural loads (frame-dependent design).</li>
+  <li>Silicone sealing interfaces ensure airtight and particulate-resistant closure between top cover and bottom shell.</li>
+  <li>Ventilation inlets and outlets are integrated into the enclosure geometry but isolated from structural joints to prevent weakening of load paths.</li>
+  <li>The transparent polycarbonate window is mechanically bonded into the FRP shell without interfering with structural continuity.</li>
+</ul>
+
+<p>
+Thermal and particulate protection is therefore achieved without compromising mechanical integrity.
+</p>
+
+<h4 class="sub-heading">Patient Support and Internal Integration</h4>
+
+<p>
+The patient support subsystem is mounted directly to the internal aluminium frame:
+</p>
+
+<ul class="team-list">
+  <li>EVA foam bed sections are fixed to rigid frame-supported platforms.</li>
+  <li>The torso and lower body sections are segmented to allow independent movement during backrest adjustment.</li>
+  <li>The gas strut mechanism connects the backrest frame to the main chassis frame, enabling controlled angular motion (0–20° inclination).</li>
+</ul>
+
+<p>
+All patient-related loads are transmitted directly into the chassis frame, ensuring no load is carried by the outer shell.
+</p>
+
+<h4 class="sub-heading">Handling and External Interface Integration</h4>
+
+<p>
+The handle subsystem is structurally integrated into reinforced frame nodes:
+</p>
+
+<ul class="team-list">
+  <li>Aluminium 6061-T6 tubular handles are connected using bolted M10 joints.</li>
+  <li>Load-bearing brackets distribute carrying forces into multiple frame members.</li>
+  <li>The handle geometry is positioned to ensure:</li>
+  <li>Symmetrical load distribution between rescuers</li>
+  <li>Stable centre-of-mass alignment during transport</li>
+  <li>Reduced torsional loading on the frame</li>
+</ul>
+
+<p>
+This subsystem acts as the primary interface between human operators and the structural system.
+</p>
+
+<h4 class="sub-heading">Gas Strut and Motion Integration</h4>
+
+<p>
+The gas strut system is integrated between the backrest assembly and the frame:
+</p>
+
+<ul class="team-list">
+  <li>Provides controlled resistance during lifting and lowering of the torso section.</li>
+  <li>Converts manual input force into smooth rotational motion.</li>
+  <li>Locking capability ensures stability at intermediate angles.</li>
+</ul>
+
+<p>
+The gas strut load is transferred into reinforced frame nodes to prevent localized stress concentrations.
+</p>
+
+<h4 class="sub-heading">Overall System Interaction</h4>
+
+<p>
+The complete system functions as a layered but integrated architecture:
+</p>
+
+<ul class="team-list">
+  <li>Inner layer: Aluminium structural frame (load-bearing backbone)</li>
+  <li>Intermediate layer: Patient support system and mechanical actuation</li>
+  <li>Outer layer: FRP environmental protection shell</li>
+</ul>
+
+<p>
+Each subsystem is physically and functionally linked through defined interfaces, ensuring:
+</p>
+
+<ul class="team-list">
+  <li>Structural continuity</li>
+  <li>Environmental sealing integrity</li>
+  <li>Controlled mechanical motion</li>
+  <li>Safe load transfer during evacuation</li>
+</ul>
+
+<h3 class="sub-heading">8.2 Structural Support Subsystem</h3>
+
+<h4 class="sub-heading">8.2.1 Design Overview</h4>
+
+<p>
+The structural support subsystem forms the primary load-bearing framework of the evacuation pod. It is designed to safely support the patient, maintain structural integrity during handling, and efficiently transfer loads throughout the structure during transport and lifting operations.
+</p>
+
+<p>
+The subsystem consists of an internal frame constructed from longitudinal and cross members, which work together to provide rigidity and stability. These members are connected using standardized fastening elements, ensuring reliable assembly, ease of maintenance, and consistent mechanical performance.
+</p>
+
+<h4 class="sub-heading">8.2.2 CAD Drawing of Structural Support Subsystem</h4>
+
+<div class="figure-container">
+
+  <img
+    src="figure6.png"
+    alt="CAD drawing of structural support subsystem"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 6:</strong> CAD drawing of Structural support subsystem
+  </p>
+
+</div>
+
+<h4 class="sub-heading">Key Design Features</h4>
+
+<ul class="team-list">
+  <li><strong>Internal Frame Structure:</strong> Combination of longitudinal and cross members forming a rigid load-bearing skeleton.</li>
+
+  <li><strong>Load Distribution:</strong> Frame geometry ensures even distribution of patient and handling loads.</li>
+
+  <li><strong>Standardized Fasteners:</strong> Use of ISO 4014 bolts paired with ISO 4033 nuts for secure and consistent connections.</li>
+
+  <li><strong>Modularity:</strong> Bolted connections allow for easier assembly, disassembly, and component replacement.</li>
+
+  <li><strong>Structural Integrity:</strong> Design minimizes deformation under operational loading conditions.</li>
+
+  <li><strong>Frame Geometry:</strong> Optimized layout to prevent excessive deflection during lifting and transport.</li>
+</ul>
+
+<h4 class="sub-heading">8.2.3 Material Choice &amp; Justification</h4>
+<p class="table-caption">
+  <strong>Table 9:</strong> Internal Structural Frame Material Choice
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material Selected</th>
+    <th>Key Properties</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Internal Frame (Longitudinal and Cross Members)</td>
+
+    <td>Aluminium 6061-T6</td>
+
+    <td>
+      Yield Strength = 240 MPa<br>
+      Elastic Modulus = 69 GPa<br>
+      Tensile Strength = 290 MPa<br>
+      Density = 2700 kg/m³
+    </td>
+
+    <td>
+      Optimal strength-to-weight ratio. Offers excellent weldability
+      with good fatigue resistance.
+    </td>
+  </tr>
+
+</table>
+
+<p class="table-caption">
+  <strong>Table 10:</strong> Off the Shelf Components Material Selection
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Specification</th>
+    <th>Function</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Bolts (ISO 4014)</td>
+
+    <td>
+      ISO 4014<br>
+      M10 × 65
+    </td>
+
+    <td>
+      Internal frame attachment to enclosure shell
+    </td>
+
+    <td>
+      High structural reliability, standardization and widespread
+      commercial availability.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Nuts (ISO 4033)</td>
+
+    <td>
+      ISO 4033 M10
+    </td>
+
+    <td>
+      Internal frame attachment to enclosure shell
+    </td>
+
+    <td>
+      The M10 fasteners offer enough gripping power and shear
+      capacity to firmly fix the fiberglass enclosure to the aluminium
+      frame while preserving durability under dynamic loading and
+      vibrations brought on by transport.
+    </td>
+  </tr>
+
+</table>
+
+<h4 class="sub-heading">8.2.3. Key Calculations</h4>
+
+<p>
+  The structural frame was analysed under the worst-case carrying condition.
+  This condition occurs when the evacuation pod is carried horizontally by the
+  rescuers, causing the frame to behave as a simply supported beam between the
+  handle locations.
+</p>
+
+<p>
+  Under this loading scenario, the largest bending moment occurs at the midpoint
+  between the handles. This location therefore represents the critical section
+  for evaluating bending stresses, structural stiffness, and overall load-carrying
+  capability of the frame.
+</p>
+
+<p>
+  The structural analysis was performed using the maximum expected patient load,
+  combined with the weight of the pod and an appropriate factor of safety to
+  account for dynamic loading conditions encountered during transport across
+  uneven terrain.
+</p>
+
+<p class="calculation">
+  <em>m</em> = 90 kg, 
+  <em>g</em> = 9.81 m/s², 
+  <em>L</em> (distance between handles) = 0.8 m
+</p>
+
+<p class="calculation">
+  <em>W</em> = <em>mg</em> = 90(9.81) = 882.9 N
+</p>
+
+<p>
+  Since the pod will be transported across uneven terrain during emergency
+  evacuation, dynamic loading effects must be considered. A dynamic amplification
+  factor of 2 was selected to account for walking motion, impacts, and load
+  oscillations.
+</p>
+
+<p class="calculation">
+  <em>F</em><sub>dynamic</sub> = 2<em>W</em> = 2(882.9) = 1765.8 N
+</p>
+
+<p>
+  To ensure adequate structural reliability under uncertain loading conditions,
+  a safety factor of 2 was applied.
+</p>
+
+<p class="calculation">
+  <em>F</em><sub>design</sub> = 2<em>F</em><sub>dynamic</sub> = 2(1765.8) = 3531.6 N
+</p>
+
+<p>
+  The structural frame is therefore designed for a worst-case vertical loading of:
+</p>
+
+<p class="calculation">
+  <em>F</em><sub>design</sub> = 3531.6 N
+</p>
+
+<h5 class="sub-heading">Maximum Bending Moment</h5>
+
+<p>
+  The frame between the handles was approximated as a simply supported beam
+  with a central point load. This loading configuration produces the maximum
+  bending moment at the centre of the span.
+</p>
+
+<p class="calculation">
+  <em>M</em><sub>max</sub> =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      FL
+    </span>
+    <span style="display:block;">4</span>
+  </span>
+  =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      (3531.6)(0.8)
+    </span>
+    <span style="display:block;">4</span>
+  </span>
+  = 706.32 N·m
+</p>
+
+<h5 class="sub-heading">Frame Cross-Section Geometry</h5>
+
+<p>
+  The structural members consist of hollow square aluminium tubing
+  manufactured from 6061-T6 aluminium alloy.
+</p>
+
+<p class="calculation">
+  outer width = <em>b</em> = 0.04 m,
+  wall thickness = <em>t</em> = 0.003 m
+</p>
+
+<p class="calculation">
+  internal width = <em>b</em><sub>i</sub>
+  = <em>b</em> − 2<em>t</em>
+  = 0.04 − 2(0.003)
+  = 0.034 m
+</p>
+
+<h5 class="sub-heading">Second Moment of Area</h5>
+
+<p>
+  The second moment of area determines the bending resistance and stiffness
+  of the hollow square tube. The section modulus relating bending resistance
+  of the member from the distance to the neutral axis is then determined.
+</p>
+
+<p class="calculation">
+  <em>I</em> =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      b<sup>4</sup> − b<sub>i</sub><sup>4</sup>
+    </span>
+    <span style="display:block;">12</span>
+  </span>
+  =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      (0.04)<sup>4</sup> − (0.034)<sup>4</sup>
+    </span>
+    <span style="display:block;">12</span>
+  </span>
+  ≈ 1.02 × 10<sup>−7</sup> m<sup>4</sup>
+</p>
+
+<p class="calculation">
+  <em>y</em> =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      b
+    </span>
+    <span style="display:block;">2</span>
+  </span>
+  =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      0.04
+    </span>
+    <span style="display:block;">2</span>
+  </span>
+  = 0.02 m
+</p>
+
+<p class="calculation">
+  Section Modulus =
+  <em>Z</em> =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      I
+    </span>
+    <span style="display:block;">y</span>
+  </span>
+  =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      1.02 × 10<sup>−7</sup>
+    </span>
+    <span style="display:block;">0.02</span>
+  </span>
+  = 5.10 × 10<sup>−6</sup> m<sup>3</sup>
+</p>
+
+<h5 class="sub-heading">Maximum Bending Stress</h5>
+
+<p>
+  The maximum bending stress in the member was calculated using the flexure
+  formula:
+</p>
+
+<p class="calculation">
+  σ<sub>max</sub> =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      M
+    </span>
+    <span style="display:block;">Z</span>
+  </span>
+  =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      706.32
+    </span>
+    <span style="display:block;">5.1 × 10<sup>−6</sup></span>
+  </span>
+  = 138.5 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>y</sub> ≈ 240 MPa
+  <br>
+  <em>(For Aluminium 6061-T6)</em>
+</p>
+
+<p>
+  <strong>Material Verification:</strong> The safety factor against yielding is
+  approximately 2.
+</p>
+
+<p>
+  The structural frame satisfies the strength requirements under worst-case
+  transport loading conditions. The selected 40 mm hollow square 6061-T6
+  aluminium members with a wall thickness of 3 mm maintain stresses below
+  the material yield strength while achieving a factor of safety of 2.
+</p>
+
+<p>
+  The frame is therefore considered structurally safe for emergency
+  evacuation operations.
+</p>
+<h4 class="sub-heading">8.2.4. Manufacturing Processes</h4>
+<p class="table-caption">
+  <strong>Table 11:</strong> Structural Frame Manufacturing Process
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material</th>
+    <th>Manufacturing Process</th>
+    <th>Process Description</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Main Frame Longitudinal Rails (x2)</td>
+    <td>Aluminium 6061-T6 40 × 40 × 3 SHS</td>
+    <td>Extrusion</td>
+    <td>
+      Hollow rectangular section profile (40×40 mm) is extruded to produce
+      continuous tube stock.
+    </td>
+    <td>
+      Extrusion produces accurate, consistent hollow profiles in Al6061
+      with minimal material waste.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Main Frame Cross Members (x4)</td>
+    <td>Aluminium 6061-T6 40 × 40 × 3 SHS</td>
+    <td>Extrusion then cutting to length</td>
+    <td>
+      Same hollow section stock is cut to 572 mm lengths using a cold saw
+      or bandsaw.
+    </td>
+    <td>
+      Compared to individual shaping, cutting from extruded stock is quicker
+      and less expensive. Clean square ends suitable for fastened connections
+      are produced by cold sawing.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Back Support Frame Members</td>
+    <td>Aluminium 6061-T6</td>
+    <td>Extrusion then cutting to length</td>
+    <td>
+      Hollow section stock cut to 651 mm and 572 mm lengths.
+    </td>
+    <td>
+      Same rationale as main frame cross members.
+    </td>
+  </tr>
+
+  <tr>
+    <td>All Frame Members — Bolt Hole Drilling</td>
+    <td>Aluminium 6061-T6</td>
+    <td>Drilling</td>
+    <td>
+      M6 clearance holes (6.5 mm diameter) drilled at connection points
+      using a pillar drill with jig.
+    </td>
+    <td>
+      Drilling is the standard process for producing fastener holes in
+      aluminium. A jig ensures hole alignment consistency across multiple
+      identical members.
+    </td>
+  </tr>
+
+  <tr>
+    <td>All Frame Members — Hole Deburring</td>
+    <td>Aluminium 6061-T6</td>
+    <td>Deburring</td>
+    <td>
+      Drilled hole edges chamfered using a hand deburring tool.
+    </td>
+    <td>
+      Removes sharp edges that would damage fastener threads and present
+      an injury risk to rescuers handling the frame.
+    </td>
+  </tr>
+
+  <tr>
+    <td>All Frame Members — Surface Treatment</td>
+    <td>Aluminium 6061-T6</td>
+    <td>Anodising</td>
+    <td>
+      Electrochemical anodising produces a hard aluminium oxide layer on
+      all exposed surfaces.
+    </td>
+    <td>
+      Anodising improves corrosion resistance in the wildfire environment
+      where moisture, ash, and retardant chemicals may contact the frame.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Frame Assembly</td>
+    <td>Aluminium 6061-T6 Frame + ISO M6 COTS Fasteners</td>
+    <td>Bolted Assembly</td>
+    <td>
+      Members aligned using an assembly jig. M6 socket head cap screws
+      torqued to 9–10 Nm with Loctite 243 thread-lock applied.
+    </td>
+    <td>
+      Bolted connections allow field disassembly if a member is damaged.
+      Thread-lock prevents vibration loosening during helicopter transport.
+    </td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">8.3. Environmental Protection Subsystem</h3>
+
+<h4 class="sub-heading">8.3.1. Design Overview</h4>
+
+<p>
+  The environmental protection subsystem is designed to provide a controlled
+  and protected enclosure for the patient during evacuation. It serves to
+  shield the patient from external environmental conditions such as dust,
+  moisture, temperature variations, and physical impacts, while maintaining
+  a safe and comfortable internal environment.
+</p>
+
+<p>
+  The subsystem consists of an insulated enclosure shell, outer casing
+  panels, sealing interfaces, and a viewing window. These components work
+  together to create a protective barrier that ensures environmental
+  isolation, structural integrity, and visibility for monitoring the
+  patient.
+</p>
+
+<div class="figure-container">
+
+  <img
+    src="figure7.png"
+    alt="Environmental protection subsystem CAD drawing"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 7:</strong> CAD drawing of environmental protection subsystem
+  </p>
+
+</div>
+
+<h5 class="sub-heading">Key Design Features</h5>
+
+<ul class="team-list">
+  <li>
+    <strong>Insulated Panels:</strong> Provide thermal insulation to maintain
+    a stable internal temperature and protect the patient from external
+    environmental conditions.
+  </li>
+
+  <li>
+    <strong>Outer Casing:</strong> Rigid external shell that protects the
+    internal components from impacts, debris, and mechanical damage.
+  </li>
+
+  <li>
+    <strong>Joints:</strong> Designed to prevent the ingress of dust, water,
+    and contaminants, ensuring airtight or watertight integrity where required.
+  </li>
+
+  <li>
+    <strong>Viewing Window:</strong> Transparent panel allowing external
+    monitoring of the patient without compromising the protective enclosure.
+  </li>
+
+  <li>
+    <strong>Insulated Enclosure Shell:</strong> Integrated structural shell
+    combining insulation and mechanical protection to form the primary
+    environmental barrier.
+  </li>
+
+  <li>
+    <strong>Cover:</strong> Removable or openable top section that allows easy
+    access to the patient while ensuring secure closure during operation.
+  </li>
+</ul>
+
+<h4 class="sub-heading">8.3.2. Material Choice &amp; Justification</h4>
+<p class="table-caption">
+  <strong>Table 12:</strong> Environmental Protection Material Choice and Justification
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material Selection</th>
+    <th>Function</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Insulated Enclosure Shell</td>
+    <td>Fiberglass reinforced polymer (FRP) with polyurethane foam core.</td>
+    <td>
+      Shields patient from external heat and reduces smoke and ash penetration.
+    </td>
+    <td>
+      FRP has a high strength-to-weight ratio, low thermal conductivity,
+      and excellent manufacturability, making it well suited to wildfire
+      evacuation environments.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Protective Cover</td>
+    <td>Fiberglass reinforced polymer (FRP) with polyurethane foam core.</td>
+    <td>
+      Provides thermal insulation, environmental protection from ash,
+      and structural enclosure around the patient compartment.
+    </td>
+    <td>
+      The polyurethane foam core improves thermal insulation and reduces
+      heat transfer into the pod during wildfire exposure, while FRP
+      provides high strength-to-weight ratio, corrosion resistance,
+      and superior impact resistance.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Viewing Window on Cover</td>
+    <td>Polycarbonate</td>
+    <td>
+      Allows visual monitoring of the patient while maintaining enclosure
+      protection.
+    </td>
+    <td>
+      Polycarbonate was selected for wildfire and emergency transport
+      applications due to its toughness, low mass, optical transparency,
+      and high impact resistance compared to traditional glass.
+    </td>
+  </tr>
+
+</table>
+
+<p class="table-caption">
+  <strong>Table 13:</strong> Off the Shelf Components Material Selection
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Specification</th>
+    <th>Function</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>HEPA-filtered passive ventilation vents</td>
+    <td>Dual HEPA-filtered passive ventilation vents</td>
+    <td>
+      Allows natural airflow circulation while filtering smoke, ash,
+      and airborne particulates from incoming air.
+    </td>
+    <td>
+      Eliminates the need for powered ventilation systems while maintaining
+      breathable airflow and environmental protection.
+    </td>
+  </tr>
+
+</table>
+
+<h4 class="sub-heading">8.3.3. Key Calculations</h4>
+
+<h5 class="sub-heading">Wildfire Thermal Conditions</h5>
+<p class="calculation">
+  T<sub>out</sub> = 60°C,
+  T<sub>in</sub> = 35°C,
+  ΔT = T<sub>out</sub> − T<sub>in</sub>
+  = 60 − 35 = 25°C
+</p>
+
+<h5 class="sub-heading">Pod External Surface Area</h5>
+
+<p class="calculation">
+  L = 2.2 m,&nbsp;&nbsp;
+  W = 0.8 m,&nbsp;&nbsp;
+  H = 0.4 m
+</p>
+
+<p class="calculation">
+  A = 2(LW + LH + WH)
+</p>
+
+<p class="calculation">
+  = 2[(2.2)(0.8) + (2.2)(0.4) + (0.8)(0.4)]
+</p>
+
+<p class="calculation">
+  = 5.92 m²
+</p>
+
+<h5 class="sub-heading">Heat Conduction Through Fiberglass Shell</h5>
+
+<p>
+  Using Fourier’s Law:
+</p>
+
+<p class="calculation">
+  k(FRP) = 0.04 W/mK
+</p>
+
+<p class="calculation">
+  k(polyurethane foam core) = 0.03 W/mK
+</p>
+
+<p class="calculation">
+  FRP thickness = 0.0015 m
+</p>
+
+<p class="calculation">
+  Core thickness = 0.014 m
+</p>
+
+<p class="calculation">
+  R<sub>frp</sub> =
+  0.0015 / 0.04
+  = 0.0375 m²K/W
+</p>
+
+<p class="calculation">
+  2R<sub>frp</sub> = 0.075
+</p>
+
+<p class="calculation">
+  R<sub>core</sub> =
+  0.014 / 0.03
+  = 0.467
+</p>
+
+<p class="calculation">
+  R<sub>total</sub> =
+  0.075 + 0.467
+  = 0.542 m²K/W
+</p>
+
+<p class="calculation">
+  q =
+  AΔT / R<sub>total</sub>
+</p>
+
+<p class="calculation">
+  = (5.92)(25) / 0.542
+  ≈ 273 W
+</p>
+
+<p>
+  The low thermal conductivity of the fiberglass and foam core significantly
+  reduces heat transfer into the pod compared to metallic structures.
+</p>
+
+<h5 class="sub-heading">Internal Pod Volume</h5>
+
+<p class="calculation">
+  V = LWH
+</p>
+
+<p class="calculation">
+  = (2.2)(0.8)(0.4)
+</p>
+
+<p class="calculation">
+  = 0.704 m³
+</p>
+
+<h5 class="sub-heading">Internal Air Mass</h5>
+
+<p class="calculation">
+  ρ = 1.225 kg/m³
+</p>
+
+<p class="calculation">
+  m = ρV
+</p>
+
+<p class="calculation">
+  = (1.225)(0.704)
+</p>
+
+<p class="calculation">
+  ≈ 0.862 kg
+</p>
+
+<h5 class="sub-heading">Evacuation Exposure Duration</h5>
+
+<p class="calculation">
+  d = 500 m
+</p>
+
+<p class="calculation">
+  Assumed carrying speed:
+  v = 1.0 m/s
+</p>
+
+<p class="calculation">
+  Walking duration:
+  t = d/v
+</p>
+
+<p class="calculation">
+  = 500 / 1.0
+</p>
+
+<p class="calculation">
+  = 500 s
+</p>
+
+<p class="calculation">
+  Including patient loading time
+  (60 seconds maximum):
+</p>
+
+<p class="calculation">
+  t<sub>total</sub> =
+  500 + 60
+  = 560 s
+  = 9.33 min
+</p>
+
+<p>
+  The pod only needs to maintain survivable conditions for approximately
+  9–10 minutes.
+</p>
+
+<h5 class="sub-heading">
+  Total Thermal Energy Entering the Pod During Evacuation
+</h5>
+
+<p class="calculation">
+  Q = qt
+</p>
+
+<p class="calculation">
+  = (273)(560)
+</p>
+
+<p class="calculation">
+  = 152880 J
+</p>
+
+<p>
+  This represents an upper-bound transient energy accumulation estimate
+  assuming no ventilation cooling.
+</p>
+
+<p class="calculation">
+  Specific heat capacity of air:
+</p>
+
+<p class="calculation">
+  c = 1005 J/kg·K
+</p>
+
+<p class="calculation">
+  ΔT =
+  Q / mc
+</p>
+
+<p class="calculation">
+  = 152880 / ((0.862)(1005))
+</p>
+
+<p class="calculation">
+  ≈ 176°C
+</p>
+
+<p>
+  This result represents an intentionally conservative worst-case estimate bracuse:
+</p>
+
+<p>
+  No ventilation cooling was assumed, constant peak wildfire exposure was
+  assumed, no shell heat absorption was considered, and no convection losses
+  were considered. The actual internal temperatures will therefore be
+  significantly lower.
+</p>
+
+<p class="calculation">
+  Q =
+  <span style="display:inline-block; vertical-align:middle;">
+    <span style="border-bottom:1px solid #ccc; display:block; padding:0 6px;">
+      131
+    </span>
+    <span style="display:block;">3600</span>
+  </span>
+  = 0.0364 m³/s
+</p>
+
+<p class="calculation">
+  Q<sub>real</sub> = 0.5Q = 0.0182 m³/s
+</p>
+
+<p>
+  Electrical power consumption, supplied by a lithium-ion battery pack:
+</p>
+
+<p class="calculation">
+  P(each fan) = 4 W,
+  &nbsp;&nbsp;
+  P<sub>total</sub> = 8 W
+</p>
+
+<p class="calculation">
+  E = Pt = (8)(560) = 4480 J
+</p>
+
+<h4 class="sub-heading">8.3.4. Manufacturing Processes</h4>
+
+<p class="table-caption">
+  <strong>Table 14:</strong> Environmental Protection Manufacturing Processes
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material</th>
+    <th>Manufacturing Process</th>
+    <th>Process Description</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Top cover outer FRP skin</td>
+    <td>
+      2200 × 800 mm plan area, 1.5 mm thickness.
+      Fiberglass reinforced polymer.
+    </td>
+    <td>Hand lay-up moulding</td>
+    <td>
+      Fibreglass woven fabric plies wet-laid with epoxy resin into a female mould.
+      Cured at room temperature under vacuum bagging pressure for 24 hours.
+    </td>
+    <td>
+      Hand lay-up is cost-effective for low-volume production of large curved
+      panels. Vacuum bagging ensures consistent resin-to-fibre ratio.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Top cover PU foam core</td>
+    <td>
+      Closed-cell polyurethane foam
+      (density 40 kg/m³),
+      20 mm thickness
+    </td>
+    <td>Foam-in-place casting</td>
+    <td>
+      Two-part polyurethane foam system poured into the cavity between outer
+      and inner skins. Expands to fill geometry and bonds to both FRP surfaces.
+      Trimmed flush at edges after curing.
+    </td>
+    <td>
+      Foam-in-place eliminates adhesive bonding steps and ensures full contact
+      between foam and FRP skins with no delamination risk. Closed-cell
+      structure prevents moisture absorption in the wildfire environment.
+    </td>
+  </tr>
+  <tr>
+  <td>Top cover-inner FRP skin</td>
+  <td>Fibreglass reinforced polymer (FRP)</td>
+  <td>Hand lay-up moulding</td>
+  <td>
+    Single-ply fibreglass fabric wet-laid with epoxy resin over foam core
+    inner surface. Cured at room temperature.
+  </td>
+  <td>
+    Inner skin provides a hard, smooth, cleanable patient contact surface.
+  </td>
+</tr>
+
+<tr>
+  <td>Bottom shell, sandwich panel (outer skin + foam core + inner skin)</td>
+  <td>
+    2200 × 800 mm plan area, 160 mm shell height.
+    Outer: 1.5 mm FRP.
+    Core: 20 mm PU foam.
+    Inner: 0.5 mm FRP.
+    Top width = 800 mm, lower width = 700 mm.
+  </td>
+  <td>Hand lay-up moulding + foam-in-place casting</td>
+  <td>
+    Identical sandwich construction process to top cover.
+    Outer FRP skin moulded first, foam cast in place,
+    inner skin laid up over foam.
+  </td>
+  <td>
+    Same process as top cover ensures consistent material
+    properties and manufacturing quality across both shells.
+    A tapered geometry improves ergonomics and reduces
+    footprint during ground transport.
+  </td>
+</tr>
+
+<tr>
+  <td>Transparent Polycarbonate viewing window</td>
+  <td>
+    Major axis: 350 mm<br>
+    Minor axis: 180 mm (oval)<br>
+    Thickness: 10 mm<br>
+    Polycarbonate
+  </td>
+  <td>CNC machining + edge polishing</td>
+  <td>
+    Oval profile CNC-machined from 10 mm PC flat sheet stock.
+    Edges machine-polished to optical clarity.
+    Aperture cut in top cover FRP shell using router jig.
+    Window bonded into aperture with structural silicone adhesive
+    and mechanically retained with FRP lip.
+  </td>
+  <td>
+    Polycarbonate selected for impact resistance
+    (250× stronger than glass), optical clarity for patient
+    monitoring, and accurate oval profile for airtight seal interface.
+  </td>
+</tr>
+
+<tr>
+  <td>Passive HEPA ventilation vents (×2)</td>
+  <td>
+    Filter face: 150 × 150 mm per vent<br>
+    Aluminium frame<br>
+    Filter grade: H13 HEPA<br>
+    Mass: 0.4 kg per unit<br>
+    Dual HEPA-filtered passive ventilation vent
+  </td>
+  <td>Aperture cutting + mechanical mounting</td>
+  <td>
+    Rectangular apertures cut in top cover FRP shell at
+    head-end and foot-end locations using router jig.
+    Vent assemblies mechanically fastened to shell using
+    M4 countersunk screws into aluminium inserts bonded
+    into the FRP. Sealed at perimeter with silicone sealant.
+  </td>
+  <td>
+    H13 HEPA filtration removes 99.95% of particles,
+    covering wildfire ash and smoke particulates.
+    Natural convection drives airflow, providing patient
+    respiratory air supply without thermal management dependency.
+  </td>
+</tr>
+
+<tr>
+  <td>Environmental protection subsystem assembly</td>
+  <td>
+    Closed pod overall:<br>
+    2200 × 800 × 400 mm<br>
+    Wall thickness: 22 mm<br>
+    FRP sandwich shells + PC window +
+    EPDM seal + COTS passive vents
+  </td>
+  <td>Structural adhesive bonding + mechanical fastening</td>
+  <td>
+    Top cover and bottom shell aligned using locating pins.
+    Hinge system (ZHJ06-92 COTS) installed at head-end.
+    EPDM seal compressed 3 mm under latching force when pod is closed.
+  </td>
+  <td>
+    Locating pins ensure repeatable alignment of mating faces
+    for consistent seal compression.
+  </td>
+</tr>
+
+</table>
+
+<h2 class="section-heading">8.4. Patient Support Platform Subsystem</h2>
+
+<h3 class="sub-heading">8.4.1. Design Overview</h3>
+
+<p>
+  The patient support platform subsystem is designed to provide a stable,
+  secure, and ergonomically suitable interface between the patient and the
+  evacuation pod structure. It ensures proper weight distribution, patient
+  immobilization, and posture control during transport, reducing the risk of
+  injury under both static and dynamic conditions.
+</p>
+
+<p>
+  The subsystem integrates a rigid bed platform supported by an internal frame,
+  a backrest mechanism for adjustable positioning, and restraining straps for
+  patient safety. These components function together to maintain patient
+  stability, enhance comfort, and ensure safe handling throughout evacuation
+  procedures.
+</p>
+
+<div class="figure-container">
+
+  <img
+    src="figure8.png"
+    alt="Patient support platform subsystem"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 8:</strong> Patient support platform subsystem.
+  </p>
+
+</div>
+
+<h3 class="sub-heading">Key Design Features</h3>
+
+<ul class="team-list">
+  <li><strong>Bed (Support Platform):</strong> A rigid, load-bearing surface designed to support the full body weight of the patient while distributing pressure evenly.</li>
+  <li><strong>Restraining Straps:</strong> Adjustable securing system used to immobilize the patient and prevent movement during lifting, transport, and emergency handling.</li>
+  <li><strong>Backrest Mechanism:</strong> Adjustable component allowing elevation of the upper body to improve comfort, breathing, and medical accessibility.</li>
+</ul>
+
+<h3 class="sub-heading">8.4.2. Material Choice & Justification</h3>
+<p class="table-caption">
+  <strong>Table 15:</strong> Patient Support Platform Material Choice and Justification (off the shelf components)
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Key Properties</th>
+    <th>Function</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Bed (EVA closed-cell foam layer)</td>
+    <td>
+      Lightweight with high strength-to-weight ratio and shock absorption
+    </td>
+    <td>
+      Provides a stable, cushioned, and load-distributing surface that supports
+      the patient's body during transport and distributes body weight evenly to
+      avoid pressure points.
+    </td>
+    <td>
+      To offer cushioning, absorb vibration, and lessen pressure points on the
+      patient's body, a layer of closed-cell foam is positioned atop the base.
+      When evacuating over uneven terrain, this increases comfort and reduces
+      the possibility of subsequent injuries.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Restraining Straps (nylon webbing straps with buckles)</td>
+    <td>
+      High tensile strength, heat resistant and adjustable length
+    </td>
+    <td>
+      To secure and stabilise the patient inside the pod during transport.
+    </td>
+    <td>
+      While flexibility enables a secure fit for a variety of body sizes,
+      high-strength webbing guarantees the patient's stability under dynamic
+      loading circumstances.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Gas strut-assisted adjustable aluminium backrest with locking hinge</td>
+    <td>
+      Smooth adjustable motion (gas strut assisted), locking capability at
+      multiple angles, durable under repeated use and vibration.
+    </td>
+    <td>
+      Provides controlled support and smooth adjustment of the backrest
+      mechanism.
+    </td>
+    <td>
+      Uses a gas strut to allow controlled adjustments of the patient’s upper
+      body position. In an emergency, the gas strut makes adjustment safer and
+      more effective by lowering the amount of human force needed by rescuers.
+    </td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">8.4.3. Key Calculations</h3>
+<p>
+  The subsystem must safely support a maximum patient load of:
+</p>
+
+<p class="calculation">
+  W = mg = 90 × 9.81 = 882.9 N
+</p>
+
+<p>
+  Load Distribution Between Torso and Lower Body:
+  Human body mass distribution was approximated as
+  Torso head/arms: 60%, Lower body: 40%.
+</p>
+
+<p class="calculation">
+  Torso Load = F<sub>t</sub> = 0.6F
+  = 0.6(883)
+  = 529.8 N ≈ 530 N
+</p>
+
+<p class="calculation">
+  Lower Body Load = F<sub>l</sub> = 0.4F
+  = 0.4(883)
+  = 353.2 N ≈ 353 N
+</p>
+
+<p class="calculation">
+  L = 1.32 m
+</p>
+
+<p class="calculation">
+  w = F/L
+</p>
+
+<p class="calculation">
+  = 353 / 1.32
+  = 267.4 N/m
+</p>
+
+<p class="calculation">
+  L = 0.65 m
+</p>
+
+<p class="calculation">
+  w (Torso bed section)
+  = 530 / 0.65
+  = 815.4 N/m ≈ 815 N/m
+</p>
+
+<p>
+  Maximum Bending Moment in support Panels:
+  The support panels were approximated as simply supported
+  beams subjected to uniformly distributed loading.
+</p>
+
+<p class="calculation">
+  M<sub>max</sub> =
+  wL² / 8
+</p>
+
+<p class="calculation">
+  = (815)(0.65)² / 8
+</p>
+
+<p class="calculation">
+  = (815)(0.4225) / 8
+</p>
+
+<p class="calculation">
+  = 344.34 / 8
+</p>
+
+<p class="calculation">
+  = 43.04 Nm ≈ 43 Nm
+</p>
+
+<p class="calculation">
+  θ = 20°
+</p>
+
+<p class="calculation">
+  r = 0.65 / 2 = 0.325 m
+</p>
+
+<p class="calculation">
+  M = Fr sinθ
+</p>
+
+<p class="calculation">
+  = (530)(0.325) sin(20°)
+</p>
+
+<p class="calculation">
+  = (172.25)(0.342)
+</p>
+
+<p class="calculation">
+  = 58.91 Nm ≈ 59 Nm
+</p>
+
+<h3 class="sub-heading">8.4.4. Manufacturing Processes</h3>
+<p class="table-caption">
+  <strong>Table 16:</strong> Patient Support Platform Manufacturing Processes
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material</th>
+    <th>Manufacturing Process</th>
+    <th>Process Description</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Lower bed EVA foam panel</td>
+    <td>
+      1320 × 572 × 5 mm (rectangular)<br>
+      EVA closed-cell foam (COTS sheet stock)
+    </td>
+    <td>Cutting to size</td>
+    <td>
+      EVA foam sheet stock cut to 1320 × 572 mm using a sharp utility knife
+      and straight edge with edges trimmed square.
+    </td>
+    <td>
+      Cutting from sheet stock eliminates tooling costs and the rectangular
+      profile matches lower frame internal dimensions exactly.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Upper bed (torso section) EVA foam panel</td>
+    <td>
+      651 × 572 × 5 mm (rectangular)<br>
+      EVA closed-cell foam (COTS sheet stock)
+    </td>
+    <td>Cutting to size</td>
+    <td>
+      EVA foam sheet stock cut to 651 × 572 mm using a sharp utility knife
+      and straight edge with edges trimmed square.
+    </td>
+    <td>
+      Separate upper section allows foam to move with the backrest during
+      inclination adjustment without creating pressure points.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Strap anchor holes in frame longitudinal rails (×4)</td>
+    <td>
+      10 mm diameter holes (×4) located in longitudinal frame rails
+    </td>
+    <td>Drilling + deburring</td>
+    <td>
+      10 mm holes drilled through walls of both longitudinal frame rails at
+      anchor point locations using a pillar drill with jig. Holes deburred
+      with hand tool.
+    </td>
+    <td>
+      Pillar drill and jig ensure hole perpendicularity and position accuracy.
+      Deburring prevents stress concentration and thread damage.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Restraining straps (×4)</td>
+    <td>
+      50 mm wide × 2 mm thick<br>
+      1000 mm length per strap<br>
+      EN 1492-1 compliant nylon webbing with steel buckles (COTS)
+    </td>
+    <td>COTS, no manufacturing required</td>
+    <td>
+      Standard EN 1492-1 rated 50 mm nylon rescue webbing sourced from
+      rescue equipment supplier with steel quick-release buckles.
+    </td>
+    <td>
+      Nylon selected for high tensile strength, heat resistance to 60°C
+      ambient and adjustable length accommodating patient sizes from child
+      to adult.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Gas struts for torso inclination (×2)</td>
+    <td>
+      Stroke: 30 mm<br>
+      Diameter: 12 mm<br>
+      Gas strut assembly (COTS)
+    </td>
+    <td>COTS, no manufacturing required</td>
+    <td>
+      Standard gas strut assemblies sourced from supplier and mounted between
+      backrest frame and main frame. Locking mechanism integrated in strut
+      allows position to be held between 0° and 20°.
+    </td>
+    <td>
+      Gas strut selected to provide smooth controlled backrest adjustment
+      requiring minimal rescuer force.
+    </td>
+  </tr>
+
+</table>
+
+<h2 class="section-heading">8.5. Handling &amp; Load Interface Subsystem</h2>
+
+<h3 class="sub-heading">8.5.1. Design Overview</h3>
+
+<p>
+  The handling and load interface subsystem is designed to facilitate safe,
+  efficient, and ergonomic interaction between the evacuation pod and external
+  operators or supporting systems. It ensures that the pod can be securely
+  lifted, carried, and mounted while maintaining structural integrity and user
+  safety.
+</p>
+
+<p>
+  This subsystem integrates fixed side handles for manual handling, mounting
+  brackets for interfacing with external transport or support systems, and
+  reinforcement features to strengthen high-load regions. Together, these
+  components provide reliable load transfer paths and enhance the durability of
+  the pod during repeated handling operations.
+</p>
+
+<div class="figure-container">
+
+  <img
+    src="figure9.png"
+    alt="Handling subsystem"
+    class="figure-image"
+  >
+
+  <p class="figure-caption">
+    <strong>Figure 9:</strong> Handling subsystem
+  </p>
+
+</div>
+
+<h3 class="sub-heading">Key Design Features</h3>
+
+<ul class="team-list">
+  <li>
+    <strong>Fixed Side Handles:</strong> Strategically positioned handles that
+    allow operators to lift and carry the pod safely, ensuring proper load
+    distribution and ergonomic handling.
+  </li>
+
+  <li>
+    <strong>Mounting Brackets:</strong> Interface components designed to
+    securely attach the pod to external systems such as transport platforms,
+    stretchers, or mounting frames.
+  </li>
+</ul>
+
+<h3 class="sub-heading">8.5.2. Material Choice &amp; Justification</h3>
+
+<p class="table-caption">
+  <strong>Table 17:</strong> Handling &amp; Load Interface Material Choice and Justification
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material Selection</th>
+    <th>Key Properties</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Side Handles (×4)</td>
+    <td>Aluminium 6061-T6</td>
+    <td>
+      Yield Strength = 240 MPa<br>
+      Elastic Modulus = 70 GPa
+    </td>
+    <td>
+      Provides high strength-to-weight ratio with ease of fabrication and good
+      fatigue performance which is essential to counteract the repeated cyclic
+      loading and dynamic carrying forces.
+    </td>
+  </tr>
+
+</table>
+
+<p class="table-caption">
+  <strong>Table 18:</strong> Off the Shelf Components
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Specification</th>
+    <th>Function</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>Retroreflective tape</td>
+    <td>
+      High temperature retroreflective tape
+    </td>
+    <td>
+      To enhance visual identification of pod handles in smoky environment.
+    </td>
+    <td>
+      It maintains reflective performance under elevated temperatures.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Grip cover</td>
+    <td>
+      Silicone rubber sleeve
+    </td>
+    <td>
+      Thermally insulating ergonomic and non-slip interface between rescuers
+      and handle.
+    </td>
+    <td>
+      It reduces heat transfer from the aluminium handle to the rescuer's hands
+      and provides grip friction.
+    </td>
+  </tr>
+
+</table>
+
+<h3 class="sub-heading">8.5.3. Key Calculations</h3>
+<p>
+  Important assumptions: equal load sharing among handles.
+</p>
+
+<p class="calculation">
+  m<sub>p</sub> = 90 kg
+</p>
+
+<p class="calculation">
+  F<sub>p</sub> = mg
+</p>
+
+<p class="calculation">
+  = (90)(9.81)
+</p>
+
+<p class="calculation">
+  = 882.9 N ≈ 883 N
+</p>
+
+<p>
+  The self-weight of the evacuation pod is included as a dead load acting
+  concurrently with the patient load during transport conditions:
+</p>
+
+<p class="calculation">
+  m<sub>pod</sub> = 38.6 kg
+</p>
+
+<p class="calculation">
+  F<sub>pod</sub> = (38.6)(9.81)
+</p>
+
+<p class="calculation">
+  = 378.67 N
+</p>
+
+<p class="calculation">
+  F<sub>total load</sub>
+</p>
+
+<p class="calculation">
+  = 883 + 378.67
+</p>
+
+<p class="calculation">
+  = 1261.67 N
+</p>
+
+<p class="calculation">
+  F<sub>handle</sub> =
+  F<sub>total</sub> / 4
+</p>
+
+<p class="calculation">
+  = 1261.67 / 4
+</p>
+
+<p class="calculation">
+  = 318.75 N ≈ 315.4 N
+</p>
+
+<p class="calculation">
+  m (per rescuer)
+</p>
+
+<p class="calculation">
+  = 315 / 9.81
+</p>
+
+<p class="calculation">
+  = 32.1 kg
+</p>
+
+<p class="calculation">
+  Dynamic load factor = 1.5
+</p>
+
+<p class="calculation">
+  F<sub>d</sub> = 1.5(1261.67)
+</p>
+
+<p class="calculation">
+  = 1892.5 N
+</p>
+
+<p class="calculation">
+  F<sub>d(r)</sub> =
+  1892.5 / 4
+</p>
+
+<p class="calculation">
+  = 478.25 N ≈ 473 N
+</p>
+
+<p class="calculation">
+  L = 0.1065 m
+</p>
+
+<p class="calculation">
+  M (max bending) = FL
+</p>
+
+<p class="calculation">
+  = (473)(0.1065)
+</p>
+
+<p class="calculation">
+  = 50.3745 Nm
+</p>
+
+<p class="calculation">
+  D = 0.03 m
+</p>
+
+<p class="calculation">
+  t = 0.003 m
+</p>
+
+<p class="calculation">
+  d = D − 2t = 0.024 m
+</p>
+
+<p class="calculation">
+  I =
+  (π/64)(0.03⁴ − 0.024⁴)
+</p>
+
+<p class="calculation">
+  I = 2.31 × 10⁻⁸ m⁴
+</p>
+
+<p class="calculation">
+  c = 0.015 m
+</p>
+
+<p class="calculation">
+  σ = Mc/I
+</p>
+
+<p class="calculation">
+  = (50.91)(0.015)/(2.31 × 10⁻⁸)
+</p>
+
+<p class="calculation">
+  ≈ 33 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>y</sub> = 276 MPa
+</p>
+
+<p class="calculation">
+  FoS = 276/33
+</p>
+
+<p class="calculation">
+  = 8.36 ≈ 8.4
+</p>
+
+<p class="calculation">
+  σ<sub>max</sub> = 33 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>min</sub> = 8 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>a</sub> = (33 − 8)/2
+</p>
+
+<p class="calculation">
+  = 12.5 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>m</sub> = (33 + 8)/2
+</p>
+
+<p class="calculation">
+  = 20.5 MPa
+</p>
+
+<p class="calculation">
+  σ<sub>f</sub> ≈ 96 MPa
+</p>
+
+<p class="calculation">
+  FoS<sub>f</sub> = 96/12.5
+</p>
+
+<p class="calculation">
+  = 7.68 ≈ 7.7
+</p>
+
+<h3 class="sub-heading">8.5.4. Manufacturing Processes</h3>
+<p class="table-caption">
+  <strong>Table 19:</strong> Handling &amp; Load Interface Manufacturing Processes
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Component</th>
+    <th>Material</th>
+    <th>Manufacturing Process</th>
+    <th>Process Description</th>
+    <th>Justification</th>
+  </tr>
+
+  <tr>
+    <td>
+      Handle mounting brackets (×4). Plate with rope aperture sized for
+      50 mm rope diameter. M6 bolt pattern.
+    </td>
+
+    <td>Aluminium 6061-T6</td>
+
+    <td>
+      CNC Milling + deburring + drilling + anodising
+    </td>
+
+    <td>
+      Bracket geometry machined from Aluminium 6061-T6 flat stock using
+      CNC milling. Handle connection and mounting holes drilled. Edges
+      deburred and anodised after machining.
+    </td>
+
+    <td>
+      Anodising consistent with frame treatment ensures uniform corrosion
+      resistance across the whole pod. CNC milling provides accurate hole
+      positioning and dimensional consistency.
+    </td>
+  </tr>
+
+  <tr>
+    <td>Handles (×4)</td>
+
+    <td>Aluminium 6061-T6</td>
+
+    <td>
+      Cutting to length + bending + drilling + deburring + anodising
+    </td>
+
+    <td>
+      Aluminium tube cut to required handle length. Tube bent to ergonomic
+      profile and mounting holes drilled at connection points. Edges
+      deburred before anodising.
+    </td>
+
+    <td>
+      Anodising improves corrosion resistance and surface durability under
+      outdoor wildfire conditions.
+    </td>
+  </tr>
+
+</table>
+
+<h2 class="section-heading">9. Solution Datasheet</h2>
+
+<p>
+  The purpose of this datasheet is to provide essential information to the rescue
+  crew for the safe and effective use of the evacuation pod during evacuation
+  procedures, and for maintenance of parts.
+</p>
+
+<h3 class="sub-heading">9.1. Features of the Solution</h3>
+
+<h4 class="sub-heading">Lightweight Internal Structural Frame</h4>
+
+<p>
+  The pod utilizes an internal load-bearing frame constructed from Aluminium
+  6061-T6 hollow square sections arranged in a reinforced longitudinal and
+  cross-member configuration. The frame provides high stiffness and reliable
+  load transfer while maintaining a low overall system mass below 40 kg. All
+  major structural joints utilize standardized ISO fasteners, allowing damaged
+  members to be removed and replaced using basic hand tools without requiring
+  specialized equipment. The modular bolted architecture also simplifies
+  maintenance and subsystem replacement after field deployment.
+</p>
+
+<h4 class="sub-heading">Integrated Thermal and Environmental Protection System</h4>
+
+<p>
+  The enclosure system consists of a Fiberglass Reinforced Polymer (FRP) shell
+  combined with a polyurethane foam insulation core. This insulated shell
+  configuration provides protection against wildfire heat exposure, airborne
+  ash, smoke particles, and environmental contaminants while maintaining a
+  lightweight structure. The enclosure acts as a sealed environmental barrier
+  using silicone compression seals positioned along the mating surfaces between
+  the top cover and lower container. A transparent polycarbonate viewing window
+  allows rescuers to continuously monitor the patient without opening the
+  enclosure and compromising internal conditions.
+</p>
+
+<h4 class="sub-heading">Ergonomic Patient Support and Positioning System</h4>
+
+<p>
+  The patient support platform incorporates EVA closed-cell foam cushioning
+  mounted on a rigid frame-supported bed structure to evenly distribute patient
+  loads and reduce pressure concentrations during transport across uneven
+  terrain. The torso support section integrates a gas strut-assisted adjustable
+  backrest mechanism capable of controlled inclination between 0° and 20°. This
+  improves patient comfort, breathing posture, and medical accessibility during
+  evacuation while minimizing the physical effort required from rescuers during
+  adjustment. Adjustable nylon restraining straps securely stabilize the
+  patient during lifting and transport operations.
+</p>
+
+<h4 class="sub-heading">Safe and Efficient Manual Handling System</h4>
+
+<p>
+  The evacuation pod integrates four fixed aluminium side handles directly
+  connected to reinforced frame nodes to ensure safe and balanced manual
+  carrying. The handle geometry and placement distribute the carrying load
+  evenly among rescuers while reducing torsional loading on the frame. Silicone
+  grip sleeves thermally isolate the handles from external heat while improving
+  grip friction under dusty or wet conditions. High-temperature retroreflective
+  tape improves visibility of the lifting interfaces in smoke-filled
+  environments and low-visibility emergency conditions.
+</p>
+
+<h4 class="sub-heading">Structural Reliability Under Dynamic Loading</h4>
+
+<p>
+  The pod structure was designed to withstand dynamic loading conditions
+  encountered during emergency evacuation over rough terrain. The frame was
+  analysed under worst-case carrying conditions using dynamic amplification and
+  safety factors to account for walking impacts, oscillations, and uneven
+  terrain loading. The Aluminium 6061-T6 structural members maintain stresses
+  below material yield limits while providing a structural factor of safety
+  greater than 2 under maximum design loading conditions. The integrated load
+  path architecture ensures that patient loads, carrying loads, and enclosure
+  loads are distributed efficiently throughout the structure without
+  overstressing individual components.
+</p>
+
+<h4 class="sub-heading">Modular and Maintainable System Architecture</h4>
+
+<p>
+  The overall system architecture separates the pod into integrated but modular
+  subsystems including:
+</p>
+
+<ul class="team-list">
+  <li>Structural Support Subsystem</li>
+  <li>Environmental Protection Subsystem</li>
+  <li>Patient Support Platform Subsystem</li>
+  <li>Handling &amp; Load Interface Subsystem</li>
+</ul>
+
+<p>
+  This modular approach improves manufacturability, inspection accessibility,
+  repairability, and future subsystem upgrades without requiring redesign of
+  the entire evacuation pod.
+</p>
+
+<h3 class="sub-heading">9.2. Technical Specifications</h3>
+<p class="table-caption">
+  <strong>Table 20:</strong> Pod Technical Specifications
+</p>
+
+<table class="comparison-table">
+
+  <tr>
+    <th>Category</th>
+    <th>Specification</th>
+    <th>Value</th>
+  </tr>
+
+  <!-- Performance -->
+
+  <tr>
+    <td><strong>Performance</strong></td>
+    <td>Maximum Patient Mass</td>
+    <td>90 kg</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Pod Mass</td>
+    <td>38.6 kg</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Maximum Design Load</td>
+    <td>3531.6 N</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Maximum Bending Stress (Frame)</td>
+    <td>138 MPa</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Maximum Handle Stress</td>
+    <td>33 MPa</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Handle Fatigue Factor of Safety</td>
+    <td>7.7</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Estimated Evacuation Duration</td>
+    <td>9–10 min</td>
+  </tr>
+
+  <!-- Dimensions -->
+
+  <tr>
+    <td><strong>Dimensions</strong></td>
+    <td>Overall Pod Length</td>
+    <td>2200 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Overall Pod Width</td>
+    <td>800 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Overall Pod Height</td>
+    <td>400 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Bottom Shell Width (Lower Section)</td>
+    <td>700 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Bottom Shell Height</td>
+    <td>160 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Top Cover Height</td>
+    <td>240 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Viewing Window Dimensions</td>
+    <td>350 (Major axis) × 180 mm (Minor axis)</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Handle Length</td>
+    <td>300 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Frame Cross Section</td>
+    <td>40 × 40 mm SHS</td>
+  </tr>
+
+  <!-- Thermal -->
+
+  <tr>
+    <td><strong>Thermal &amp; Environmental Protection</strong></td>
+    <td>External Temperature Exposure</td>
+    <td>Up to 60°C</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Internal Target Temperature</td>
+    <td>≤ 35°C</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Thermal Insulation System</td>
+    <td>FRP + Polyurethane Foam Core</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Shell Thickness (Base)</td>
+    <td>22 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Shell Thickness (Top Cover)</td>
+    <td>17 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Viewing Window Material</td>
+    <td>Polycarbonate</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Seal Compression Range</td>
+    <td>20–30%</td>
+  </tr>
+
+  <!-- Ventilation -->
+
+  <tr>
+    <td><strong>Ventilation System</strong></td>
+    <td>Ventilation Method</td>
+    <td>Filtered active airflow</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Fan Type</td>
+    <td>Axial PWM micro fans</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Number of Fans</td>
+    <td>2 (inlet)</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Fan Diameter</td>
+    <td>120 mm</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Filter Type</td>
+    <td>HEPA filtration</td>
+  </tr>
+
+  <!-- Patient Support -->
+
+  <tr>
+    <td><strong>Patient Support System</strong></td>
+    <td>Backrest Inclination Range</td>
+    <td>0°–20°</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Backrest Adjustment Mechanism</td>
+    <td>Gas strut assisted</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Bed Cushion Material</td>
+    <td>EVA closed-cell foam</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Restraining System</td>
+    <td>Adjustable nylon straps</td>
+  </tr>
+
+  <!-- Structural -->
+
+  <tr>
+    <td><strong>Handling &amp; Structural System</strong></td>
+    <td>Primary Structural Material</td>
+    <td>Aluminium 6061-T6 with holes</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Structural Member Configuration</td>
+    <td>Hollow Square Section</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Handle Material</td>
+    <td>Aluminium 6061-T6</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Fastener Standard</td>
+    <td>ISO 4014 / ISO 4033</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Frame Connection Method</td>
+    <td>Bolted assembly</td>
+  </tr>
+
+  <!-- Maintenance -->
+
+  <tr>
+    <td><strong>Durability &amp; Maintenance</strong></td>
+    <td>Corrosion Protection Method</td>
+    <td>Anodizing</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Replaceable Structural Members</td>
+    <td>Yes</td>
+  </tr>
+
+  <tr>
+    <td></td>
+    <td>Maintenance Method</td>
+    <td>Basic hand-tool disassembly</td>
+  </tr>
+
+</table>
+
+<h2 class="section-heading">References</h2>
+
+<ol class="reference-list">
+
+  <li>
+    Z. A. Mani, Amir Khorram-Manesh, and Krzysztof Goniewicz,
+    “Global Health Impacts of Wildfire Disasters From 2000 to 2023:
+    A Comprehensive Analysis of Mortality and Injuries,”
+    <em>Disaster Medicine and Public Health Preparedness</em>,
+    vol. 18, Jan. 2024,
+    doi:
+    <a href="https://doi.org/10.1017/dmp.2024.150" target="_blank">
+      https://doi.org/10.1017/dmp.2024.150
+    </a>.
+  </li>
+
+  <li>
+    C. Niu, D. J. Nair, T. Zhang, V. Dixit, and P. Murray-Tuite,
+    “Are wildfire fatalities related to road network characteristics?
+    A preliminary analysis of global wildfire cases,”
+    <em>International Journal of Disaster Risk Reduction</em>,
+    vol. 80, p. 103217, Oct. 2022,
+    doi:
+    <a href="https://doi.org/10.1016/j.ijdrr.2022.103217" target="_blank">
+      https://doi.org/10.1016/j.ijdrr.2022.103217
+    </a>.
+  </li>
+
+  <li>
+    A. Cardil and D. M. Molina,
+    “Factors Causing Victims of Wildland Fires in Spain (1980–2010),”
+    <em>Human and Ecological Risk Assessment: An International Journal</em>,
+    vol. 21, no. 1, pp. 67–80, Jul. 2014,
+    doi:
+    <a href="https://doi.org/10.1080/10807039.2013.871995" target="_blank">
+      https://doi.org/10.1080/10807039.2013.871995
+    </a>.
+  </li>
+
+  <li>
+    M. Diakakis, G. Xanthopoulos, and L. Gregos,
+    “Analysis of forest fire fatalities in Greece: 1977–2013,”
+    <em>International Journal of Wildland Fire</em>,
+    vol. 25, no. 7, pp. 797–809, Jul. 2016,
+    doi:
+    <a href="https://doi.org/10.1071/WF15198" target="_blank">
+      https://doi.org/10.1071/WF15198
+    </a>.
+  </li>
+
+  <li>
+    R. Skinner et al.,
+    “A Literature Review on the Impact of Wildfires on Emergency
+    Departments: Enhancing Disaster Preparedness,”
+    <em>Prehospital and Disaster Medicine</em>,
+    vol. 37, no. 5, pp. 657–664, 2022,
+    doi:10.1017/S1049023X22001054.
+  </li>
+
+  <li>
+    J. M. Morgan and P. Calleja,
+    “Emergency trauma care in rural and remote settings:
+    Challenges and patient outcomes,”
+    <em>International Emergency Nursing</em>,
+    vol. 51, no. 100880, p. 100880, Jul. 2020,
+    doi:
+    <a href="https://doi.org/10.1016/j.ienj.2020.100880" target="_blank">
+      https://doi.org/10.1016/j.ienj.2020.100880
+    </a>.
+  </li>
+
+  <li>
+    C. K. Grissom, F. Thomas, and B. James,
+    “Medical helicopters in wilderness search and rescue operations,”
+    <em>Air Medical Journal</em>,
+    vol. 25, no. 1, pp. 18–25, Jan. 2006,
+    doi:
+    <a href="https://doi.org/10.1016/j.amj.2005.10.002" target="_blank">
+      https://doi.org/10.1016/j.amj.2005.10.002
+    </a>.
+  </li>
+
+  <li>
+    Adventure Medics (2026)
+    <em>Wildland Fire Medical Support</em>.
+    Available at:
+    <a href="https://adventuremedics.com/wildland-fire-medical-support/" target="_blank">
+      https://adventuremedics.com/wildland-fire-medical-support/
+    </a>
+    (Accessed: 14 May 2026).
+  </li>
+
+  <li>
+    Evac+Chair,
+    “ResQPod - Medical Emergency Evacuation Pod.”
+    Available at:
+    <a href="https://www.evac-chair.com/blog/resqpod/" target="_blank">
+      https://www.evac-chair.com/blog/resqpod/
+    </a>
+    (Accessed: 17 May 2026).
+  </li>
+
+  <li>
+    Medicare,
+    “S-CAPEPOD Evacuation Sheet Standard Model.”
+    Available at:
+    <a href="https://www.medicare.co.za/product/s-capepod-standard-evacuation-sheet/" target="_blank">
+      https://www.medicare.co.za/product/s-capepod-standard-evacuation-sheet/
+    </a>
+    (Accessed: 17 May 2026).
+  </li>
+
+  <li>
+    EpiGuard,
+    “EpiShuttle.”
+    Available at:
+    <a href="https://epiguard.com/epishuttle/" target="_blank">
+      https://epiguard.com/epishuttle/
+    </a>
+    (Accessed: 17 May 2026).
+  </li>
+
+</ol>
+
+<h2 class="section-heading">10. Engineering Drawings</h2>
+
+<div class="figure-container">
+
+  <img
+    src="1.jpg"
+    class="figure-image"
+  >
+
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="2.jpg"
+    class="figure-image"
+  >
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="3.jpg"
+    class="figure-image"
+  >
+
+
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="4.jpg"
+    class="figure-image"
+  >
+
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="5.jpg"
+    class="figure-image"
+  >
+
+  
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="6.jpg"
+    class="figure-image"
+  >
+
+
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="7.jpg"
+
+    class="figure-image"
+  >
+
+
+
+</div>
+
+<div class="figure-container">
+
+  <img
+    src="8.jpg"
+    alt="Engineering Drawing 2"
+    class="figure-image"
+  >
+
+
+
+</div>
+
+  </section>
+
+</main>
+
+
+<footer>
+  <p>&copy; 2026 Nomfundo Mkhwanazi</p>
+
+  <div class="icons">
+    <a href="mailto:nomfundo.mkhwanazi@gmail.com">
+      <i class="fas fa-envelope"></i>
+    </a>
+    <a href="https://github.com/nnomfundo" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://linkedin.com/in/nomfundomkhwanazi" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
