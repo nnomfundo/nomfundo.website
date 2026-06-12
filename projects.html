@@ -7,6 +7,7 @@
   <link rel="icon" href="myfavicon.png" type="image/png">
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
   <style>
     * {
       margin: 0;
@@ -107,38 +108,6 @@
       padding-right: 2rem;
     }
 
-    @media (max-width: 768px) {
-      nav {
-        display: none;
-        flex-direction: column;
-        background-color: #1a1a1a;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        padding: 1rem 0;
-        text-align: center;
-      }
-
-      nav a {
-        margin: 1rem 0;
-        font-size: 1.2rem;
-      }
-
-      nav.active {
-        display: flex;
-      }
-
-      .menu-toggle {
-        display: block;
-      }
-
-      header h1 {
-        padding-left: 1rem;
-        margin-top: 2.6rem;
-      }
-    }
-
     main {
       max-width: 1000px;
       margin: 7rem auto 4rem auto;
@@ -162,16 +131,23 @@
     }
 
     .project-grid {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 2rem;
+    }
+
+    .project-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
     }
 
     .project-card {
       background-color: #2a2a2a;
       border-radius: 8px;
       overflow: hidden;
-      width: 280px;
+      width: 100%;
+      height: 100%;
       transition: transform 0.3s ease;
     }
 
@@ -179,11 +155,18 @@
       transform: translateY(-5px);
     }
 
-    .project-image {
+    .image-wrapper {
+      position: relative;
       width: 100%;
       height: 180px;
+      overflow: hidden;
+    }
+
+    .project-image {
+      width: 100%;
+      height: 100%;
       object-fit: cover;
-      position: relative;
+      display: block;
     }
 
     .overlay {
@@ -246,15 +229,72 @@
     .icons a:hover {
       color: #0077b5;
     }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 1rem;
+      }
+
+      header h1 {
+        padding-left: 1rem;
+        margin-top: 2.6rem;
+        font-size: 1.2rem;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        padding: 1rem 0;
+        text-align: center;
+        margin-top: 0;
+      }
+
+      nav a {
+        margin: 1rem 0;
+        font-size: 1.2rem;
+      }
+
+      nav.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: block;
+        padding-right: 1rem;
+        margin-top: 2.6rem;
+      }
+
+      main {
+        margin-top: 8rem;
+        padding: 1.2rem;
+      }
+
+      .project-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .project-card {
+        width: 100%;
+      }
+    }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1><a href="index.html">Nomfundo Mkhwanazi</a></h1>
+
   <div class="menu-toggle" id="menu-toggle">
     <i class="fas fa-bars"></i>
   </div>
+
   <nav id="main-nav">
     <a href="projects.html">Projects</a>
     <a href="blog.html">Blog</a>
@@ -264,39 +304,39 @@
 
 <main>
 
-  <!-- Design Projects Section -->
   <section>
     <h2 class="section-title">Design Projects</h2>
     <div class="section-underline"></div>
+
     <div class="project-grid">
+      <a href="evacuationpod.html" class="project-link">
+        <div class="project-card">
+          <div class="image-wrapper">
+            <img src="evacpod.jpg" class="project-image" alt="Remote Medical Evacuation Pod">
+            <div class="overlay"><span>Read more</span></div>
+          </div>
 
-      <a href="evacuationpod.html" style="text-decoration: none; color: inherit;">
-      <div class="project-card">
-        <div class="project-image">
-          <img src="evacpod.jpg" class="project-image">
-          <div class="overlay"><span>Read more</span></div>
+          <div class="project-description">
+            <h3>Remote Medical Evacuation Pod</h3>
+            <p>MECN2038A – Engineering Design Project 1 | 2026</p>
+          </div>
         </div>
-        <div class="project-description">
-          <h3>Remote Medical Evacuation Pod</h3>
-          <p>MECN2038A – Engineering Design Project 1 | 2026</p>
-        </div>
-      </div>
-
+      </a>
     </div>
   </section>
 
-  <!-- Engineering Drawing Section -->
   <section>
     <h2 class="section-title">Computer-Aided Design (CAD)</h2>
     <div class="section-underline"></div>
-    <div class="project-grid">
 
-      <a href="four-cylinder.html" style="text-decoration: none; color: inherit;">
+    <div class="project-grid">
+      <a href="four-cylinder.html" class="project-link">
         <div class="project-card">
-          <div class="project-image">
-            <img src="FourCylinder.jpg" class="project-image">
+          <div class="image-wrapper">
+            <img src="FourCylinder.jpg" class="project-image" alt="Four Cylinder Engine Assembly">
             <div class="overlay"><span>Read more</span></div>
           </div>
+
           <div class="project-description">
             <h3>Four Cylinder Engine Assembly | Autodesk Inventor</h3>
             <p>Complete four-cylinder engine assembly with motion simulation and animation using Autodesk Inventor.</p>
@@ -304,32 +344,33 @@
         </div>
       </a>
 
-      <a href="drone-frame-design.html" style="text-decoration: none; color: inherit;">
+      <a href="drone-frame-design.html" class="project-link">
         <div class="project-card">
-          <div class="project-image">
-            <img src="DroneDrawing.jpg" class="project-image">
+          <div class="image-wrapper">
+            <img src="DroneDrawing.jpg" class="project-image" alt="Quadcopter Drone Assembly">
             <div class="overlay"><span>Read more</span></div>
           </div>
+
           <div class="project-description">
             <h3>Quadcopter Drone Assembly | Solid Edge</h3>
             <p>Assembly of a quadcopter drone using Solid Edge, with focus on learning CAD basics.</p>
           </div>
         </div>
       </a>
-
     </div>
   </section>
 
-  <!-- Modeling & Simulation Section -->
   <section>
     <h2 class="section-title">Modeling & Simulation</h2>
     <div class="section-underline"></div>
+
     <div class="project-grid">
       <div class="project-card">
-        <div class="project-image">
-          <img src="comingsoon.jpg" class="project-image">
+        <div class="image-wrapper">
+          <img src="comingsoon.jpg" class="project-image" alt="Coming Soon">
           <div class="overlay"><span>Read more</span></div>
         </div>
+
         <div class="project-description">
           <h3>Coming Soon</h3>
           <p>Coming Soon</p>
@@ -340,22 +381,24 @@
 
 </main>
 
-<script>
-  const toggle = document.getElementById('menu-toggle');
-  const nav = document.getElementById('main-nav');
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
-  });
-</script>
-
 <footer>
   <p>&copy; Copyright 2025</p>
+
   <div class="icons">
     <a href="mailto:nnomfundo.mkhwanazi@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
     <a href="https://github.com/nnomfundo" target="_blank"><i class="fab fa-github"></i></a>
     <a href="https://linkedin.com/in/nomfundomkhwanazi" target="_blank"><i class="fab fa-linkedin"></i></a>
   </div>
 </footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('main-nav');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+  });
+</script>
 
 </body>
 </html>
