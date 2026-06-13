@@ -9,59 +9,142 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
   <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Outfit', sans-serif;
       background-color: #1a1a1a;
       color: #eaeaea;
-      margin: 0;
     }
 
     header {
-      padding: 3rem;
+      width: 100%;
+      padding: 1.5rem 2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      background-color: rgba(26,26,26,0.9);
+      backdrop-filter: blur(3px);
     }
 
     header h1 {
       font-size: 1.37rem;
       font-weight: 700;
+      padding-left: 10rem;
+      margin-top: 1.6rem;
     }
 
-    header h1 a,
-    nav a {
+    header h1 a {
       color: inherit;
       text-decoration: none;
+      position: relative;
+    }
+
+    header h1 a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      left: 0;
+      bottom: -4px;
+      background-color: #0077b5;
+      transition: width 0.4s ease;
+    }
+
+    header h1 a:hover::after {
+      width: 100%;
+    }
+
+    nav {
+      padding-right: 9rem;
+      margin-top: 4rem;
     }
 
     nav a {
-      margin-left: 2rem;
+      margin-left: 1.5rem;
       color: #aaa;
+      text-decoration: none;
       font-size: 1rem;
+      position: relative;
+      transition: color 0.3s ease;
     }
 
     nav a:hover {
       color: #fff;
     }
 
+    nav a::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 100%;
+      height: 2px;
+      background: #0077b5;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.3s ease;
+    }
+
+    nav a:hover::before {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .menu-toggle {
+      display: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      padding-right: 2rem;
+    }
+
     main {
       max-width: 900px;
-      margin: 1rem auto 5rem;
-      padding: 0 2rem;
+      margin: 7rem auto 3rem auto;
+      padding: 2rem;
     }
 
-    .project-section {
-      margin-top: 5rem;
-    }
-
-    .intro-section {
-      margin-top: 2rem;
-    }
-
+    h2,
     .page-title {
-      font-size: 2.4rem;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+      color: #eaeaea;
+    }
+
+    h3,
+    .section-heading {
+      font-size: 1.3rem;
+      margin-top: 3rem;
+      margin-bottom: 1rem;
+      color: #00aaff;
+    }
+
+    h4,
+    h5,
+    .sub-heading {
+      font-size: 1.15rem;
+      margin-top: 2rem;
       margin-bottom: 1rem;
       color: #eaeaea;
+    }
+
+    p,
+    .project-section p,
+    .intro-section p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      text-align: left;
     }
 
     .project-meta {
@@ -70,25 +153,9 @@
       margin-bottom: 2rem;
     }
 
-    .section-heading {
-      color: #00aaff;
-      font-size: 1.8rem;
-      margin-bottom: 1.5rem;
-    }
-
-    .sub-heading {
-      font-size: 1.25rem;
-      margin-bottom: 1rem;
-      color: #eaeaea;
-    }
-
-    .project-section p,
-    .intro-section p {
-      color: #ccc;
-      line-height: 1.8;
-      font-size: 1.05rem;
-      margin-bottom: 1.2rem;
-      text-align: justify;
+    .project-section,
+    .intro-section {
+      margin-top: 3rem;
     }
 
     .team-list {
@@ -99,8 +166,7 @@
 
     .team-list li {
       color: #ccc;
-      font-size: 1.05rem;
-      line-height: 1.8;
+      line-height: 1.6;
       margin-bottom: 0.4rem;
     }
 
@@ -113,153 +179,217 @@
       text-decoration: underline;
     }
 
-.calculation {
-  text-align: center !important;
-  color: #eaeaea !important;
-  font-size: 1.05rem;
-  margin: 1.5rem 0;
-}
-
-    .comparison-table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 2rem 0;
-  color: #ccc;
-  font-size: 0.95rem;
-}
-
-.comparison-table th,
-.comparison-table td {
-  border: 1px solid #444;
-  padding: 0.9rem;
-  text-align: left;
-  vertical-align: top;
-}
-
-.comparison-table th {
-  color: #eaeaea;
-  background-color: #222;
-}
-
-.table-caption {
-  color: #aaa;
-  font-size: 0.95rem;
-  margin-bottom: 1rem;
-}
+    .tutorial-links,
+    .function-box,
+    .function-card,
+    .aux-function {
+      background-color: #222;
+      border: 1px solid #444;
+      border-radius: 8px;
+    }
 
     .figure-container {
-  margin: 2rem 0;
+      margin: 2rem 0;
+      padding: 1rem;
+    }
+
+    .figure-image {
+      width: 100%;
+      max-width: 700px;
+      display: block;
+      margin: 0 auto 1rem auto;
+      border-radius: 6px;
+      object-fit: contain;
+    }
+
+    .figure-caption {
+      color: #aaa;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      text-align: left;
+      margin: 0 auto;
+      max-width: 700px;
+    }
+
+    .figure-caption strong {
+      color: #eaeaea;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 1.5rem 0;
+      color: #ccc;
+      font-size: 0.95rem;
+      background-color: #222;
+      border: 1px solid #444;
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+      border: 1px solid #444;
+      padding: 0.9rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    .comparison-table th {
+      color: #eaeaea;
+      background-color: #1f1f1f;
+    }
+
+    .table-caption {
+      color: #aaa;
+      font-size: 0.95rem;
+      margin-bottom: 1rem;
+    }
+
+    .calculation {
+      text-align: center !important;
+      color: #eaeaea !important;
+      font-size: 1.05rem;
+      margin: 1.5rem 0;
+    }
+
+    .function-box {
+      max-width: 450px;
+      margin: 2rem auto;
+      padding: 1rem;
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .primary {
+      background-color: #0077b5;
+      color: white;
+    }
+
+    .function-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0 4rem;
+    }
+
+    .function-card {
+      padding: 1.5rem;
+      text-align: center;
+    }
+
+    .function-card strong {
+      display: block;
+      margin-bottom: 0.8rem;
+      color: #eaeaea;
+    }
+
+    .sub-function {
+      color: #aaa;
+    }
+
+    .auxiliary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .aux-function {
+      padding: 1rem;
+      text-align: center;
+      color: #ccc;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #aaa;
+      margin-top: 4rem;
+      padding-bottom: 1rem;
+    }
+
+    footer p {
+  text-align: center;
 }
 
-.figure-image {
-  width: 100%;
-  max-width: 700px;
-  display: block;
-  margin: 0 auto 1rem auto;
+.icons {
+  text-align: center;
+  margin-top: 1rem;
 }
 
-.figure-caption {
-  color: #aaa;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  text-align: left;
-  margin: 0 auto;
-  max-width: 700px;
-}
+    .icons a {
+      margin: 0 0.5rem;
+      color: #eaeaea;
+      text-decoration: none;
+    }
 
-.figure-caption strong {
-  color: #eaeaea;
-}
+    .icons a:hover {
+      color: #0077b5;
+    }
 
     @media (max-width: 768px) {
+
       header {
-        padding: 2rem;
+        padding: 1.5rem 2rem;
+      }
+
+      nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background-color: #1a1a1a;
+        text-align: center;
+        padding-right: 0;
+        margin-top: 0;
+        border-top: 1px solid #333;
+      }
+
+      nav.active {
+        display: flex;
       }
 
       nav a {
-        margin-left: 1rem;
+        margin: 1rem 0;
       }
 
-      .page-title {
-        font-size: 1.9rem;
+      .menu-toggle {
+        display: block;
       }
 
-      .project-section p,
-      .intro-section p {
-        text-align: left;
+      header h1 {
+        padding-left: 1rem;
+        margin-top: 2.6rem;
+      }
+
+      main {
+        margin-top: 7rem;
+        padding: 2rem 1.2rem;
+      }
+
+      .function-grid,
+      .auxiliary-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+
+      .comparison-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+      }
+
+      .page-title,
+      h2 {
+        font-size: 1.6rem;
+      }
+
+      h3,
+      .section-heading {
+        font-size: 1.25rem;
       }
     }
-
-.function-box {
-  max-width: 450px;
-  margin: 2rem auto;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 8px;
-  font-weight: 700;
-}
-
-.primary {
-  background-color: #0077b5;
-  color: white;
-}
-
-.function-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
-  margin: 2rem 0 4rem;
-}
-
-.function-card {
-  background-color: #222;
-  padding: 1.5rem;
-  text-align: center;
-  border-radius: 6px;
-}
-
-.function-card strong {
-  display: block;
-  margin-bottom: 0.8rem;
-  color: #eaeaea;
-}
-
-.sub-function {
-  color: #aaa;
-}
-
-.auxiliary-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
-}
-
-.aux-function {
-  background-color: #222;
-  padding: 1rem;
-  text-align: center;
-  border-radius: 6px;
-  color: #ccc;
-}
-
-footer {
-  text-align: center;
-  font-size: 0.85rem;
-  color: #aaa;
-  margin-top: 4rem;
-  padding-bottom: 2rem;
-}
-
-.icons a {
-  margin: 0 0.5rem;
-  color: #eaeaea;
-  text-decoration: none;
-}
-
-.icons a:hover {
-  color: #0077b5;
-}
 
   </style>
 </head>
@@ -268,7 +398,12 @@ footer {
 
 <header>
   <h1><a href="index.html">Nomfundo Mkhwanazi</a></h1>
-  <nav>
+
+  <div class="menu-toggle" id="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+
+  <nav id="main-nav">
     <a href="projects.html">Projects</a>
     <a href="blog.html">Blog</a>
     <a href="about.html">About</a>
@@ -4148,7 +4283,6 @@ The subsystem consists of an internal frame constructed from longitudinal and cr
   </section>
 
 </main>
-
 
 <footer>
   <p>&copy; Copyright 2025</p>
